@@ -15,20 +15,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
   <!-- Core theme CSS (includes Bootstrap)-->
-  <link href="resources/css/styles.css" rel="stylesheet" />
+  <link href="resources/css/styles.css?after" rel="stylesheet" />
 </head>
-<body>
-<!-- Background Video-->
-<video class="bg-video" playsinline="playsinline" autoplay="autoplay"
-       muted="muted" loop="loop"><source src="resources/assets/mp4/intro.mp4" type="video/mp4" /></video>
+<body style="background-image: url(resources/assets/img/wave_background_8.jpg); background-size: cover">
 <!-- Masthead-->
 <div class="masthead">
   <div class="masthead-content text-white">
     <div class="container-fluid px-4 px-lg-0">
-      <h1 class="fst-normal fs-1 fw-bold lh-1 mb-4">비울수록, 채워진다.</h1>
+      <h1 class="fst-normal fs-2 fw-bold lh-1 mb-4">비울수록, 채워진다.</h1>
       <p class="fst-normal fs-4 fw-light mb-5">더 나은 소비를 위한 지출 기록장.<br>My Minimal Account Book.</p>
         <div class="row input-group-newsletter">
-          <div class="col-auto"><button class="btn btn-outline-light" style="font-family: Noto Sans KR, sans-serif;
+          <div class="col-auto"><button onclick="location='register.jsp'" class="btn btn-outline-light" style="font-family: Noto Sans KR, sans-serif;
           font-weight: lighter; letter-spacing: 1.1px;" id="signUpButton" type="submit">시작하기</button></div>
         </div>
       </form>

@@ -9,15 +9,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5302081-c2d0-4d3e-ba3a-9af8c809947a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/web/resources/assets/favicon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/resources/assets/img/bg-mobile.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="a5302081-c2d0-4d3e-ba3a-9af8c809947a" name="Changes" comment=":art: Improve Design">
+      <change afterPath="$PROJECT_DIR$/web/register.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/assets/img/wave_background_8.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/META-INF/application.xml" beforeDir="false" afterPath="$PROJECT_DIR$/META-INF/application.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/resources/assets/img/bg-mobile-fallback.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/resources/assets/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/resources/assets/img/bg-mobile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/resources/assets/mp4/bg.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/resources/assets/mp4/intro.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/resources/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/resources/css/bootstrap.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/resources/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/resources/css/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,6 +30,14 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Jsp File" />
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -53,7 +62,8 @@
   "keyToString": {
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/82107/IdeaProjects/JSP_webProject",
+    "last_opened_file_path": "C:/Users/82107/IdeaProjects/JSP_webProject/web",
+    "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -67,9 +77,10 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\82107\IdeaProjects\JSP_webProject\web" />
+      <recent name="C:\Users\82107\IdeaProjects\JSP_webProject\web\resources\assets\img" />
       <recent name="C:\Users\82107\IdeaProjects\JSP_webProject" />
       <recent name="C:\Users\82107\IdeaProjects\JSP_webProject\web\resources\assets\mp4" />
-      <recent name="C:\Users\82107\IdeaProjects\JSP_webProject\web" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\82107\IdeaProjects\JSP_webProject\web\resources\assets" />
@@ -175,8 +186,18 @@
       <option name="presentableId" value="Default" />
       <updated>1668646578043</updated>
       <workItem from="1668646580359" duration="2439000" />
-      <workItem from="1668835995922" duration="8705000" />
+      <workItem from="1668835995922" duration="8867000" />
+      <workItem from="1668932244024" duration="30000" />
+      <workItem from="1669078000358" duration="7563000" />
     </task>
+    <task id="LOCAL-00001" summary=":art: Improve Design">
+      <created>1668845460783</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1668845460783</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,5 +213,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value=":art: Improve Design" />
+    <option name="LAST_COMMIT_MESSAGE" value=":art: Improve Design" />
   </component>
 </project>
