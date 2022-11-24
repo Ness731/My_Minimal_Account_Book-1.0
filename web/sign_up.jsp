@@ -12,7 +12,7 @@
 <!-- js 파일로 분리하면 인식이 안돼서 직접 삽입함-->
 <script type="text/javascript">
     function signupForm_check() {
-        const form = document.signup_form;
+        const form = document.signupForm;
         //변수에 담아주기
         let pwd = form.pwd;
         let repwd = form.repwd;
@@ -63,7 +63,7 @@
 <body style="background-image: url(resources/assets/img/register_background.jpg);
 background-size: cover;" onLoad="document.signupForm.email_id.focus()">
 
-<form name="signup_form">
+<form name="signupForm">
     <div class="container py-5 h-100 stop-dragging" style="z-index: 2;">
         <div class="row d-flex justify-content-center align-items-center h-100">
             <div class="col-12 col-md-8 col-lg-6 col-xl-5">
