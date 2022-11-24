@@ -9,20 +9,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5302081-c2d0-4d3e-ba3a-9af8c809947a" name="Changes" comment=":art: Improve Design">
-      <change afterPath="$PROJECT_DIR$/web/login.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/main.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/resources/assets/img/register_background_blur.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/sign_up.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/sign_up_process.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/welcome.jsp" afterDir="false" />
+    <list default="true" id="a5302081-c2d0-4d3e-ba3a-9af8c809947a" name="Changes" comment=":art: Improve UI :sparkles: Add new Page">
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/commons-fileupload-1.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/commons-io-2.7.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/cos.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/jstl-1.2.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/register.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/resources/assets/img/wave_background_8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/resources/assets/img/register_background.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/resources/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/resources/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/login.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/resources/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/resources/js/scripts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/sign_up.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/sign_up.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,25 +58,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/82107/IdeaProjects/JSP_webProject/web/resources/assets/img&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.applicationServers&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/82107/IdeaProjects/JSP_webProject/web/WEB-INF/lib",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.applicationServers"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\82107\IdeaProjects\JSP_webProject\web\WEB-INF\lib" />
       <recent name="C:\Users\82107\IdeaProjects\JSP_webProject\web\resources\assets\img" />
       <recent name="C:\Users\82107\IdeaProjects\JSP_webProject\web" />
       <recent name="C:\Users\82107\IdeaProjects\JSP_webProject" />
@@ -95,7 +92,6 @@
   </component>
   <component name="RunManager">
     <configuration name="Tomcat 9.0.68" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.68" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="JSP_webProject:war exploded">
           <settings>
@@ -198,7 +194,11 @@
       <workItem from="1669199876195" duration="490000" />
       <workItem from="1669200385116" duration="805000" />
       <workItem from="1669201413018" duration="9424000" />
-      <workItem from="1669210878159" duration="17847000" />
+      <workItem from="1669210878159" duration="18014000" />
+      <workItem from="1669267742947" duration="4474000" />
+      <workItem from="1669280668013" duration="1148000" />
+      <workItem from="1669281839946" duration="14000" />
+      <workItem from="1669281881469" duration="6022000" />
     </task>
     <task id="LOCAL-00001" summary=":art: Improve Design">
       <created>1668845460783</created>
@@ -207,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668845460783</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary=":art: Improve UI :sparkles: Add new Page">
+      <created>1669229965526</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1669229965526</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,14 +233,15 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value=":art: Improve Design" />
-    <option name="LAST_COMMIT_MESSAGE" value=":art: Improve Design" />
+    <MESSAGE value=":art: Improve UI :sparkles: Add new Page" />
+    <option name="LAST_COMMIT_MESSAGE" value=":art: Improve UI :sparkles: Add new Page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/web/login.jsp</url>
-          <line>25</line>
+          <line>26</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

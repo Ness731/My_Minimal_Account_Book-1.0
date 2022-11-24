@@ -11,7 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
     <link href="resources/css/styles.css?after" rel="stylesheet"/>
 </head>
-<body style="background-image: url(resources/assets/img/register_background.jpg); background-size: cover;">
+<body style="background-image: url(resources/assets/img/register_background.jpg);
+background-size: cover;" onLoad="document.signupForm.email.focus()">
 <div class="container py-5 h-100 stop-dragging" style="z-index: 2;">
     <div class="row d-flex justify-content-center align-items-center h-100">
         <div class="col-12 col-md-8 col-lg-6 col-xl-5">
