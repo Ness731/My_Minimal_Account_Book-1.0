@@ -10,18 +10,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5302081-c2d0-4d3e-ba3a-9af8c809947a" name="Changes" comment=":sparkles: Add Sign Up script">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dao/FormChecker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/login_process.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/signup02.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/signup_process.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+    <list default="true" id="a5302081-c2d0-4d3e-ba3a-9af8c809947a" name="Changes" comment=":sparkles: Add Sign Up script :art: Improve UI">
+      <change afterPath="$PROJECT_DIR$/src/dto/Expenditure.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dto/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/resources/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/resources/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sign_up.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/signup01.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,8 +30,9 @@
       <list>
         <option value="CSS File" />
         <option value="JavaScript File" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="package-info" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -215,7 +208,7 @@
       <workItem from="1669355433816" duration="6380000" />
       <workItem from="1669361859183" duration="1673000" />
       <workItem from="1669365850880" duration="1224000" />
-      <workItem from="1669367108909" duration="4916000" />
+      <workItem from="1669367108909" duration="6050000" />
     </task>
     <task id="LOCAL-00001" summary=":art: Improve Design">
       <created>1668845460783</created>
@@ -245,7 +238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669297886627</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary=":sparkles: Add Sign Up script :art: Improve UI">
+      <created>1669372214594</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1669372214594</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -266,17 +266,7 @@
     <MESSAGE value=":art: Improve Design" />
     <MESSAGE value=":art: Improve UI :sparkles: Add new Page" />
     <MESSAGE value=":sparkles: Add Sign Up script" />
-    <option name="LAST_COMMIT_MESSAGE" value=":sparkles: Add Sign Up script" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/dao/FormChecker.java</url>
-          <line>14</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value=":sparkles: Add Sign Up script :art: Improve UI" />
+    <option name="LAST_COMMIT_MESSAGE" value=":sparkles: Add Sign Up script :art: Improve UI" />
   </component>
 </project>
