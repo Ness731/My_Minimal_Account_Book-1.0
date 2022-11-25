@@ -28,7 +28,7 @@
             <div class="row input-group-newsletter">
                 <div class="col-auto">
                     <!-- 다국어 처리 필요 3 -->
-                    <button onclick="location='sign_up.jsp'" class="btn btn-primary"
+                    <button onclick="location='signup01.jsp'" class="btn btn-primary"
                             style="font-family: Noto Sans KR, sans-serif; font-weight: bold;
                             font-size: medium; letter-spacing: 1.3px;"
                             id="signUpButton" type="submit">회원가입

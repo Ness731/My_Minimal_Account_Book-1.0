@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
+      <artifact name="JSP_webProject:ear exploded" />
       <artifact name="JSP_webProject:war exploded" />
     </artifacts-to-build>
   </component>
@@ -10,9 +11,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a5302081-c2d0-4d3e-ba3a-9af8c809947a" name="Changes" comment=":sparkles: Add Sign Up script">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dao/FormChecker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/login_process.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/signup02.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/signup_process.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/resources/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/resources/js/scripts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/sign_up.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/sign_up.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/resources/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/resources/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/sign_up.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/signup01.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +38,7 @@
       <list>
         <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="Class" />
         <option value="Jsp File" />
       </list>
     </option>
@@ -56,7 +66,8 @@
   "keyToString": {
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/82107/IdeaProjects/JSP_webProject/web/WEB-INF/lib",
+    "last_directory_selection": "C:/Users/82107/IdeaProjects/JSP_webProject/src",
+    "last_opened_file_path": "C:/Program Files/Java/jdk1.8.0_341",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -65,8 +76,8 @@
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.applicationServers"
+    "project.structure.side.proportion": "0.3321839",
+    "settings.editor.selected.configurable": "FeaturesTrainerSettingsPanel"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -85,11 +96,18 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="Tomcat 9.0.68" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.68" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+    <configuration name="Tomcat 9.0.68" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.68" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="17" nameIsGenerated="true">
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <deployment>
         <artifact name="JSP_webProject:war exploded">
           <settings>
             <option name="CONTEXT_PATH" value="/JSP_webProject_war_exploded" />
+          </settings>
+        </artifact>
+        <artifact name="JSP_webProject:ear exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
           </settings>
         </artifact>
       </deployment>
@@ -169,6 +187,7 @@
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
           <artifact name="JSP_webProject:war exploded" />
+          <artifact name="JSP_webProject:ear exploded" />
         </option>
       </method>
     </configuration>
@@ -192,7 +211,11 @@
       <workItem from="1669267742947" duration="4474000" />
       <workItem from="1669280668013" duration="1148000" />
       <workItem from="1669281839946" duration="14000" />
-      <workItem from="1669281881469" duration="6131000" />
+      <workItem from="1669281881469" duration="6214000" />
+      <workItem from="1669355433816" duration="6380000" />
+      <workItem from="1669361859183" duration="1673000" />
+      <workItem from="1669365850880" duration="1224000" />
+      <workItem from="1669367108909" duration="4916000" />
     </task>
     <task id="LOCAL-00001" summary=":art: Improve Design">
       <created>1668845460783</created>
@@ -215,7 +238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669297794641</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary=":sparkles: Add Sign Up script">
+      <created>1669297886627</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1669297886627</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,8 +272,8 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/web/login.jsp</url>
-          <line>26</line>
+          <url>file://$PROJECT_DIR$/src/dao/FormChecker.java</url>
+          <line>14</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
