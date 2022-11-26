@@ -3,8 +3,9 @@ package dto;
 import java.util.ArrayList;
 
 public class Expenditure {
+    int expend_id;
     int amount;
-    String date;
+    String expend_date;
     String img;
     String category;
     String description;
@@ -21,12 +22,12 @@ public class Expenditure {
         this.amount = amount;
     }
 
-    public String getDate() {
-        return date;
+    public String getExpend_date() {
+        return expend_date;
     }
 
-    public void setDate(String date) {
-        this.date = date;
+    public void setExpend_date(String expend_date) {
+        this.expend_date = expend_date;
     }
 
     public String getImg() {
@@ -59,5 +60,14 @@ public class Expenditure {
 
     public void setTag(ArrayList<String> tag) {
         this.tag = tag;
+    }
+
+
+    public int getExpend_id() {
+        return expend_id;
+    }
+
+    public void setExpend_id(int expend_id) {
+        this.expend_id = expend_id;
     }
 }
