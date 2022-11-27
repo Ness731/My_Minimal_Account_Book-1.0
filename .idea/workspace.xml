@@ -10,18 +10,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5302081-c2d0-4d3e-ba3a-9af8c809947a" name="Changes" comment=":sparkles: Add MySQL Connection">
-      <change afterPath="$PROJECT_DIR$/src/dao/ExpenditureDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dao/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/FormChecker.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dto/Expenditure.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dto/User.java" beforeDir="false" />
+    <list default="true" id="a5302081-c2d0-4d3e-ba3a-9af8c809947a" name="Changes" comment=":sparkles: Add User DAO">
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/login_process.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/login_process.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/signup_process.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/signup_process.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +72,6 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_directory_selection": "C:/Users/82107/IdeaProjects/JSP_webProject/src/dto",
     "last_opened_file_path": "C:/mysql-connector-j-8.0.31",
@@ -277,7 +266,7 @@
       <workItem from="1669484214807" duration="4121000" />
       <workItem from="1669490271013" duration="2286000" />
       <workItem from="1669532982022" duration="546000" />
-      <workItem from="1669547560200" duration="7972000" />
+      <workItem from="1669547560200" duration="8014000" />
     </task>
     <task id="LOCAL-00001" summary=":art: Improve Design">
       <created>1668845460783</created>
@@ -328,7 +317,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669490843918</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary=":sparkles: Add User DAO">
+      <created>1669558676254</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1669558676254</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -352,6 +348,7 @@
     <MESSAGE value=":sparkles: Add Sign Up script :art: Improve UI" />
     <MESSAGE value=":sparkles: Add DTO" />
     <MESSAGE value=":sparkles: Add MySQL Connection" />
-    <option name="LAST_COMMIT_MESSAGE" value=":sparkles: Add MySQL Connection" />
+    <MESSAGE value=":sparkles: Add User DAO" />
+    <option name="LAST_COMMIT_MESSAGE" value=":sparkles: Add User DAO" />
   </component>
 </project>

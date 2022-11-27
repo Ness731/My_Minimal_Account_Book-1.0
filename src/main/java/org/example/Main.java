@@ -1,10 +1,7 @@
 package org.example;
 
-import dao.DBUtill;
 import dao.UserDAO;
 import dto.User;
-
-import java.sql.Connection;
 
 public class Main {
     public static void main(String[] args) throws Exception {
