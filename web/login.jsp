@@ -58,7 +58,7 @@ background-size: cover;" onLoad="document.signupForm.email.focus()">
                                 <label class="col-form-label script">이메일</label>
                             </div>
 
-                            <div class="form-outline form-white mb-4">
+                            <div class="form-outline form-white" style="margin-bottom: 5.5rem">
                                 <input type="password" name="pwd" class="form-control form-control-lg"/>
                                 <!-- 다국어 처리 필요 4 -->
                                 <label class="col-form-label script">비밀번호</label>
@@ -72,7 +72,7 @@ background-size: cover;" onLoad="document.signupForm.email.focus()">
                             <!-- 다국어 처리 필요 6 -->
                             <p class="mb-0 script-normal">계정이 없으십니까?
                                 <!-- 다국어 처리 필요 7 -->
-                                <a href="signup01.jsp" class="text-white-50 fw-bold script-normal">회원가입</a>
+                                <a href="signup.jsp" class="text-white-50 fw-bold script-normal">회원가입</a>
                             </p>
 
                             <p class="mb-0 script-normal">

@@ -1,13 +1,16 @@
-<%@ page import="dao.dao.FormChecker" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page import="dao.UserManager" %>
 <html>
 <%
-    FormChecker checker = FormChecker.getInstance();
-    String email = request.getParameter("email_id");
-    if (checker.test(email)) {
-        response.sendRedirect("signup02.jsp?email_id=" + email);
+    UserManager userMgr = UserManager.getInstance();
+    String email_id = request.getParameter("email_id");
+    String pwd = request.getParameter("pwd");
+    String uname = request.getParameter("uname");
+
+    if (userMgr.signUp(email_id, pwd, uname)) {
+        response.sendRedirect("welcome.jsp");
     } else {
-        response.sendRedirect("signup01.jsp");
+        response.sendRedirect("error_page.jsp");
     }
 %>
 </html>

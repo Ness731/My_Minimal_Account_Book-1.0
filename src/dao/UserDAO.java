@@ -18,8 +18,7 @@ public class UserDAO {
         return instance;
     }
 
-    public int insertUser(User user) throws SQLException {
-        int resultCnt = 0;
+    public boolean insertUser(User user) throws SQLException {
         Connection conn = null;
 
         try {
@@ -30,17 +29,17 @@ public class UserDAO {
             pstmt.setString(2, user.getPwd());
             pstmt.setString(3, user.getUname());
 
-            resultCnt = pstmt.executeUpdate();
-
+            pstmt.executeUpdate();
             pstmt.close();
 
         } catch (Exception e) {
             e.printStackTrace();
+            return false;
         } finally {
             if (conn != null)
                 conn.close();
         }
-        return resultCnt;
+        return true;
     }
 
     public int updateUser(User user) throws SQLException {

@@ -18,19 +18,10 @@
     let pwd = form.pwd;
     let repwd = form.repwd;
     let uname = form.uname;
-    let email_id = form.email_id;
     //비밀번호 영문자+숫자+특수조합(8~25자리 입력) 정규식
     let pwdCheck = /^(?=.*[a-zA-Z])(?=.*[!@#$%^*+=-])(?=.*[0-9]).{8,25}$/;
-    let emailCheck = /^[a-zA-Z0-9+-\_.]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
 
-    if (email_id.value == "") {
-      alert("이메일 주소를 입력하세요.");
-      email_id.focus();
-    } else if (!emailCheck.test(email_id.value)) {
-      alert("이메일 양식이 유효하지 않습니다.\n" +
-              "[email@domain] 형식으로 입력해주세요.");
-      email_id.focus();
-    } else if (pwd.value == "") {
+    if (pwd.value == "") {
       alert("비밀번호를 입력하세요.");
       pwd.focus();
     } else if (!pwdCheck.test(pwd.value)) {
@@ -42,13 +33,11 @@
     } else if (uname.value == "") {
       alert("닉네임을 입력하세요.");
       uname.focus();
-    }
-    //입력 값 전송
-    else {
+    } else {
       form.method = "post";
-      form.action = "welcome.jsp";
+      form.action = "signup_process.jsp";
       form.submit();
-    } //유효성 검사의 포인트
+    }
   }
 </script>
 <body style="background-image: url(resources/assets/img/register_background.jpg);

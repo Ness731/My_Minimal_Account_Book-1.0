@@ -25,7 +25,7 @@
             email_id.focus();
         } else {
             form.method = "post";
-            form.action = "signup_process.jsp";
+            form.action = "email_check.jsp";
             form.submit();
         }
     }
@@ -44,14 +44,16 @@ background-size: cover;" onLoad="document.signupForm.email_id.focus()">
                             <h2 class="fw-bold mb-4 text-uppercase index">Sign Up</h2>
 
                             <!-- 폼 태그 -->
-                            <div class="form-outline form-white mb-4">
+                            <div class="form-outline form-white mb-1">
                                 <label class="col-form-label script">이메일</label>
                                 <input type="text" name="email_id" class="form-control form-control-lg mb-2"/>
                                 <!-- 다국어 처리 필요 3 -->
                                 <button class="btn btn-primary btn-sm px-2 fw-light script" type="button"
+                                        style="margin-bottom: 0.1rem"
                                         onclick="check_email()">
                                     이메일 중복 확인
                                 </button>
+                                <p class="m-1" style="font-size: small; color: indianred">이미 사용중인 이메일입니다.</p>
                             </div>
                             <div style="pointer-events : none;">
                                 <div class="form-outline form-white mb-4">
