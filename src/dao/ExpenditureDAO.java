@@ -30,7 +30,7 @@ public class ExpenditureDAO {
             pstmt.setString(4, expenditure.getImg());
             pstmt.setString(5, expenditure.getCategory());
             pstmt.setString(6, expenditure.getDescription());
-            pstmt.setString(7, expenditure.getTag());
+            pstmt.setString(7, expenditure.getTagString());
 
             resultCnt = pstmt.executeUpdate();
 
@@ -54,13 +54,13 @@ public class ExpenditureDAO {
                     "category=?, description=?, tag=? " +
                     "where expend_id=?";
             PreparedStatement pstmt = conn.prepareStatement(sql);
-            pstmt.setInt(2, expenditure.getAmount());
-            pstmt.setDate(3, expenditure.getExpend_date());
-            pstmt.setString(4, expenditure.getImg());
-            pstmt.setString(5, expenditure.getCategory());
-            pstmt.setString(6, expenditure.getDescription());
-            pstmt.setString(7, expenditure.getTag());
-            pstmt.setInt(1, expenditure.getExpend_id());
+            pstmt.setInt(1, expenditure.getAmount());
+            pstmt.setDate(2, expenditure.getExpend_date());
+            pstmt.setString(3, expenditure.getImg());
+            pstmt.setString(4, expenditure.getCategory());
+            pstmt.setString(5, expenditure.getDescription());
+            pstmt.setString(6, expenditure.getTagString());
+            pstmt.setInt(7, expenditure.getExpend_id());
 
             resultCnt = pstmt.executeUpdate();
 
@@ -109,11 +109,11 @@ public class ExpenditureDAO {
             while (rs.next()) {
                 Expenditure expenditure =
                         new Expenditure(rs.getInt(1), rs.getInt(2), rs.getDate(3),
-                                rs.getString(4), rs.getString(5), rs.getString(6), rs.getString(7));
+                                rs.getString(4), rs.getString(5),
+                                rs.getString(6), rs.getString(7));
                 list.add(expenditure);
             }
         } catch (Exception e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         } finally {
             if(conn != null)
@@ -136,10 +136,10 @@ public class ExpenditureDAO {
             if (rs.next()) {
                 expenditure =
                         new Expenditure(rs.getInt(1), rs.getInt(2), rs.getDate(3),
-                                rs.getString(4), rs.getString(5), rs.getString(6), rs.getString(7));
+                                rs.getString(4), rs.getString(5),
+                                rs.getString(6), rs.getString(7));
             }
         } catch (Exception e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         } finally {
             if(conn != null)

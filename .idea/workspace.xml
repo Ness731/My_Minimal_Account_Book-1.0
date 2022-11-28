@@ -10,10 +10,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5302081-c2d0-4d3e-ba3a-9af8c809947a" name="Changes" comment=":sparkles: Add User DAO">
-      <change afterPath="$PROJECT_DIR$/web/resources/assets/img/calendar.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/resources/sql/expenditure.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/resources/sql/user.sql" afterDir="false" />
+    <list default="true" id="a5302081-c2d0-4d3e-ba3a-9af8c809947a" name="Changes" comment=":sparkles: Add Expenditure DAO">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dao/ExpenditureDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/ExpenditureDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/UserDAO.java" afterDir="false" />
@@ -275,7 +272,7 @@
       <workItem from="1669532982022" duration="546000" />
       <workItem from="1669547560200" duration="8078000" />
       <workItem from="1669594028477" duration="88000" />
-      <workItem from="1669611877221" duration="5005000" />
+      <workItem from="1669611877221" duration="9934000" />
     </task>
     <task id="LOCAL-00001" summary=":art: Improve Design">
       <created>1668845460783</created>
@@ -333,7 +330,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669558676254</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary=":sparkles: Add Expenditure DAO">
+      <created>1669618751736</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1669618751736</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -358,6 +362,7 @@
     <MESSAGE value=":sparkles: Add DTO" />
     <MESSAGE value=":sparkles: Add MySQL Connection" />
     <MESSAGE value=":sparkles: Add User DAO" />
-    <option name="LAST_COMMIT_MESSAGE" value=":sparkles: Add User DAO" />
+    <MESSAGE value=":sparkles: Add Expenditure DAO" />
+    <option name="LAST_COMMIT_MESSAGE" value=":sparkles: Add Expenditure DAO" />
   </component>
 </project>

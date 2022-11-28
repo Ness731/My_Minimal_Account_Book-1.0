@@ -51,9 +51,9 @@ public class UserDAO {
             conn = DBUtill.getConnection();
             String sql = "update user set pwd=?, uname=? where email_id=?";
             PreparedStatement pstmt = conn.prepareStatement(sql);
-            pstmt.setString(2, user.getPwd());
-            pstmt.setString(3, user.getUname());
-            pstmt.setString(1, user.getEmail_id());
+            pstmt.setString(1, user.getPwd());
+            pstmt.setString(2, user.getUname());
+            pstmt.setString(3, user.getEmail_id());
 
             resultCnt = pstmt.executeUpdate();
 
