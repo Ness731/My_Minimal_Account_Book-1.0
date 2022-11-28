@@ -2,22 +2,14 @@ package dao;
 
 import dto.User;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.Statement;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
 public class UserDAO {
     private static UserDAO instance;
-    private Connection conn;
+
     private UserDAO() {
-        try{
-            conn = DBUtill.getConnection();
-        }catch(Exception e){
-            e.printStackTrace();
-        }
     }
 
     public static UserDAO getInstance() {
@@ -26,10 +18,12 @@ public class UserDAO {
         return instance;
     }
 
-    public int insertUser(User user) {
+    public int insertUser(User user) throws SQLException {
         int resultCnt = 0;
+        Connection conn = null;
 
         try {
+            conn = DBUtill.getConnection();
             String sql = "insert into user values(?,?,?)";
             PreparedStatement pstmt = conn.prepareStatement(sql);
             pstmt.setString(1, user.getEmail_id());
@@ -42,14 +36,19 @@ public class UserDAO {
 
         } catch (Exception e) {
             e.printStackTrace();
+        } finally {
+            if (conn != null)
+                conn.close();
         }
         return resultCnt;
     }
 
-    public int updateUser(User user) {
+    public int updateUser(User user) throws SQLException {
         int resultCnt = 0;
+        Connection conn = null;
 
         try {
+            conn = DBUtill.getConnection();
             String sql = "update user set pwd=?, uname=? where email_id=?";
             PreparedStatement pstmt = conn.prepareStatement(sql);
             pstmt.setString(2, user.getPwd());
@@ -62,19 +61,20 @@ public class UserDAO {
 
         } catch (Exception e) {
             e.printStackTrace();
+        } finally {
+            if (conn != null)
+                conn.close();
         }
         return resultCnt;
 
     }
 
-    public int deleteUser(String email_id) {
-
+    public int deleteUser(String email_id) throws SQLException {
         int resultCnt = 0;
+        Connection conn = null;
 
-        // DB 연결 : Connection
         try {
-            // Statement
-            // SQL : delete
+            conn = DBUtill.getConnection();
             String sql = "delete from user where email_id=?";
             PreparedStatement pstmt = conn.prepareStatement(sql);
             pstmt.setString(1, email_id);
@@ -86,47 +86,47 @@ public class UserDAO {
 
         } catch (Exception e) {
             e.printStackTrace();
+        } finally {
+            if (conn != null)
+                conn.close();
         }
-
-        // 결과
         return resultCnt;
     }
 
     // 부서의 전체 리스트
-    public List<User> listUser() {
-
+    public List<User> listUser() throws SQLException {
         List<User> list = new ArrayList<User>();
-
         Statement stmt = null;
+        Connection conn = null;
 
         try {
+            conn = DBUtill.getConnection();
             stmt = conn.createStatement();
-
             String sql = "select * from User order by email_id";
-
             ResultSet rs = stmt.executeQuery(sql);
-
             while (rs.next()) {
                 User user = new User(rs.getString(1), rs.getString(2), rs.getString(3));
                 list.add(user);
             }
-
         } catch (Exception e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
+        } finally {
+            if (conn != null)
+                conn.close();
         }
 
         return list;
     }
 
     // 부서 하나 검색
-    public User searchUser(String email_id) {
-
+    public User searchUser(String email_id) throws SQLException {
         User user = null;
-
         Statement stmt = null;
+        Connection conn = null;
 
         try {
+            conn = DBUtill.getConnection();
             stmt = conn.createStatement();
 
             String sql = "select * from user where email_id = \"" + email_id + "\"";
@@ -139,8 +139,10 @@ public class UserDAO {
         } catch (Exception e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
+        } finally {
+            if (conn != null)
+                conn.close();
         }
         return user;
-
     }
 }

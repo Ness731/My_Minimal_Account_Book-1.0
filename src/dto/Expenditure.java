@@ -1,17 +1,36 @@
 package dto;
 
+import java.sql.Date;
 import java.util.ArrayList;
 
 public class Expenditure {
     int expend_id;
     int amount;
-    String expend_date;
+    Date expend_date;
     String img;
     String category;
     String description;
     ArrayList<String> tag;
 
     public Expenditure() {
+    }
+
+    public Expenditure(int expend_id, int amount, Date expend_date, String img,
+                       String category, String description, String tag) {
+        this.expend_id = expend_id;
+        this.amount = amount;
+        this.expend_date = expend_date;
+        this.img = img;
+        this.category = category;
+        this.description = description;
+        this.tag = toArrayList(tag);
+    }
+
+    private ArrayList<String> toArrayList(String tag) {
+        ArrayList<String> tagList = new ArrayList<String>();
+        //문자열 split
+
+        return tagList;
     }
 
     public int getAmount() {
@@ -22,11 +41,11 @@ public class Expenditure {
         this.amount = amount;
     }
 
-    public String getExpend_date() {
+    public Date getExpend_date() {
         return expend_date;
     }
 
-    public void setExpend_date(String expend_date) {
+    public void setExpend_date(Date expend_date) {
         this.expend_date = expend_date;
     }
 
@@ -54,8 +73,8 @@ public class Expenditure {
         this.description = description;
     }
 
-    public ArrayList<String> getTag() {
-        return tag;
+    public String getTag() {
+        return tag.toString();
     }
 
     public void setTag(ArrayList<String> tag) {

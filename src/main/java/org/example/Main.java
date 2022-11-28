@@ -1,17 +1,22 @@
 package org.example;
 
-import dao.UserDAO;
-import dto.User;
+import dao.ExpenditureDAO;
+import dto.Expenditure;
+
+import java.sql.Date;
 
 public class Main {
     public static void main(String[] args) throws Exception {
         // DAO Test
-        UserDAO test = UserDAO.getInstance();
-        User user = new User("test@test.test","test123","test");
-        test.insertUser(user);
-        user.setUname("testName");
-        test.updateUser(user);
-        test.searchUser("test@test.test");
-        test.deleteUser("test@test.test");
+        ExpenditureDAO test = ExpenditureDAO.getInstance();
+        Date date = new Date(2021, 11, 28);
+        Expenditure expend = new Expenditure(
+                1, 20000, date, "web/resources/assets/img/calendar.jpg",
+                "eat", "yumyum", "muckbang"
+        );
+        test.insertExpenditure(expend);
+        //expend.setCategory("testName");
+        //test.updateExpenditure(expend);
+        //test.deleteExpenditure("test@test.test");
     }
 }
