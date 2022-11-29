@@ -28,13 +28,13 @@
             <div class="row input-group-newsletter">
                 <div class="col-auto">
                     <!-- 다국어 처리 필요 3 -->
-                    <button onclick="location='signup.jsp'" class="btn btn-primary"
+                    <button onclick="location='signup/signup.jsp'" class="btn btn-primary"
                             style="font-family: Noto Sans KR, sans-serif; font-weight: bold;
                             font-size: medium; letter-spacing: 1.3px;"
                             id="signUpButton" type="submit">회원가입
                     </button>
 
-                    <button onclick="location='login.jsp'" class="btn btn-outline-light"
+                    <button onclick="location='login/login.jsp'" class="btn btn-outline-light"
                             style="font-family: Noto Sans KR, sans-serif; font-weight: bold;
                             font-size: medium; letter-spacing: 1.3px;"
                             id="loginButton" type="submit">로그인

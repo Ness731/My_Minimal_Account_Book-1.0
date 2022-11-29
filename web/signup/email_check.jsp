@@ -6,9 +6,9 @@
   String email_id = request.getParameter("email_id");
 
   if (userMgr.isExistUser(email_id)) {
-    response.sendRedirect("signup_check_failed.jsp");
+    response.sendRedirect("../signup/signup_check_failed.jsp");
   } else {
-    response.sendRedirect("signup_check_success.jsp?email_id="+email_id);
+    response.sendRedirect("../signup/signup_check_success.jsp?email_id="+email_id);
   }
 %>
 </html>

@@ -5,12 +5,10 @@
     UserManager userMgr = UserManager.getInstance();
     String email_id = request.getParameter("email_id");
     String pwd = request.getParameter("pwd");
-    String uname = request.getParameter("uname");
-
-    if (userMgr.signUp(email_id, pwd, uname)) {
-        response.sendRedirect("welcome.jsp");
+    if (userMgr.login(email_id, pwd)) {
+        response.sendRedirect("../main.jsp");
     } else {
-        response.sendRedirect("error_page.jsp");
+        response.sendRedirect("../login/login_failed.jsp");
     }
 %>
 </html>

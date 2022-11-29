@@ -7,7 +7,7 @@
     <title>Login - My Minimal Account Book</title>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
-    <link href="resources/css/styles.css?after" rel="stylesheet"/>
+    <link href="../resources/css/styles.css?after" rel="stylesheet"/>
 </head>
 <!-- js 파일로 분리하면 인식이 안돼서 직접 삽입함-->
 <script type="text/javascript">
@@ -31,12 +31,12 @@
         }
         else {
             form.method = "post";
-            form.action = "login_process.jsp";
+            form.action = "../login/login_process.jsp";
             form.submit();
         }
     }
 </script>
-<body style="background-image: url(resources/assets/img/register_background.jpg);
+<body style="background-image: url(../resources/assets/img/register_background.jpg);
 background-size: cover;" onLoad="document.signupForm.email.focus()">
 
 <form name="loginForm">
@@ -72,11 +72,11 @@ background-size: cover;" onLoad="document.signupForm.email.focus()">
                             <!-- 다국어 처리 필요 6 -->
                             <p class="mb-0 script-normal">계정이 없으십니까?
                                 <!-- 다국어 처리 필요 7 -->
-                                <a href="signup.jsp" class="text-white-50 fw-bold script-normal">회원가입</a>
+                                <a href="../signup/signup.jsp" class="text-white-50 fw-bold script-normal">회원가입</a>
                             </p>
 
                             <p class="mb-0 script-normal">
-                                <a href="index.jsp" class="text-white-50 fw-bold script-normal">메인으로</a>
+                                <a href="../index.jsp" class="text-white-50 fw-bold script-normal">메인으로</a>
                             </p>
                         </div>
                     </div>
