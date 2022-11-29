@@ -18,7 +18,7 @@
     let pwd = form.pwd;
     let repwd = form.repwd;
     let uname = form.uname;
-    let email_id = document.getElementById("email_id");
+    let email_id = document.querySelector('input[name=email_id]');
     //비밀번호 영문자+숫자+특수조합(8~25자리 입력) 정규식
     let pwdCheck = /^(?=.*[a-zA-Z])(?=.*[!@#$%^*+=-])(?=.*[0-9]).{8,25}$/;
 

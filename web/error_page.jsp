@@ -28,7 +28,7 @@
             <div class="row input-group-newsletter">
                 <div class="col-auto">
                     <!-- 다국어 처리 필요 3 -->
-                    <button onclick="location='index.jsp'" class="btn btn-outline-light"
+                    <button onclick="location='../index.jsp'" class="btn btn-outline-light"
                             style="font-family: Noto Sans KR, sans-serif; font-weight: lighter;
                             font-size: medium; letter-spacing: 1.3px;"
                             id="signUpButton" type="submit">인덱스 화면

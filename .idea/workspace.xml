@@ -10,29 +10,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a5302081-c2d0-4d3e-ba3a-9af8c809947a" name="Changes" comment=":art: Improve Code Structure">
-      <change afterPath="$PROJECT_DIR$/web/util/footer.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/util/js_info.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/util/logout_modal.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/util/main_header.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/util/scroll_to_top_button.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/util/sidebar.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/util/topbar.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/099a1b64-06f2-4321-b67c-1721f3226089.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/099a1b64-06f2-4321-b67c-1721f3226089.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/profile.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/assets/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/charts.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/charts.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/email_check.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/signup/email_check.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/login/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/login_failed.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/login/login_failed.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/login_process.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/login/login_process.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/error_page.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/error_page.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/main.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/resources/css/sb-admin-2.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/resources/css/sb-admin-2.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/resources/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/resources/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/signup.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/signup/signup.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/signup_check_failed.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/signup/signup_check_failed.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/signup_check_success.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/signup/signup_check_success.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/signup_process.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/signup/signup_process.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/tables.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/tables.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/resources/assets/img/undraw_profile_1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/resources/assets/img/undraw_profile_2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/resources/assets/img/undraw_profile_3.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/signup/signup_check_success.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/signup/signup_check_success.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/util/sidebar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/util/sidebar.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/util/topbar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/util/topbar.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,9 +54,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="package-info" />
         <option value="Class" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
         <option value="Jsp File" />
       </list>
     </option>
@@ -93,16 +83,17 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;last_directory_selection&quot;: &quot;C:/Users/82107/IdeaProjects/JSP_webProject/src/dto&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/82107/IdeaProjects/JSP_webProject/web&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/82107/IdeaProjects/JSP_webProject/web/resources/assets&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Facets&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.3321839&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;
@@ -115,18 +106,18 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\82107\IdeaProjects\JSP_webProject\web\resources\assets" />
       <recent name="C:\Users\82107\IdeaProjects\JSP_webProject\web" />
-      <recent name="C:\Users\82107\IdeaProjects\JSP_webProject\web\resources\assets\img" />
-      <recent name="C:\Users\82107\IdeaProjects\JSP_webProject\web\resources\css" />
-      <recent name="C:\Users\82107\IdeaProjects\JSP_webProject\web\resources\js" />
-      <recent name="C:\Users\82107\IdeaProjects\JSP_webProject\web\resources" />
+      <recent name="C:\Users\82107\IdeaProjects\JSP_webProject\web\calendar\js" />
+      <recent name="C:\Users\82107\IdeaProjects\JSP_webProject\web\calendar" />
+      <recent name="C:\Users\82107\IdeaProjects\JSP_webProject\web\calendar-04" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\82107\IdeaProjects\JSP_webProject\web\calendar-04" />
       <recent name="C:\Users\82107\IdeaProjects\JSP_webProject\web\signup" />
       <recent name="C:\Users\82107\IdeaProjects\JSP_webProject\web\login" />
       <recent name="C:\Users\82107\IdeaProjects\JSP_webProject\web\util" />
       <recent name="C:\Users\82107\IdeaProjects\JSP_webProject\web\resources\js" />
-      <recent name="C:\Users\82107\IdeaProjects\JSP_webProject\web\resources" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="src" />
@@ -258,7 +249,8 @@
       <workItem from="1669653151315" duration="382000" />
       <workItem from="1669679510071" duration="4872000" />
       <workItem from="1669712442825" duration="5708000" />
-      <workItem from="1669719053254" duration="1071000" />
+      <workItem from="1669719053254" duration="17160000" />
+      <workItem from="1669737274343" duration="1033000" />
     </task>
     <task id="LOCAL-00001" summary=":art: Improve Design">
       <created>1668845460783</created>
@@ -344,7 +336,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669715344512</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary=":art: Improve Code Structure">
+      <created>1669720167826</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1669720167826</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
