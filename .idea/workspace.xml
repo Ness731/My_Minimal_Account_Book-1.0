@@ -9,25 +9,51 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5302081-c2d0-4d3e-ba3a-9af8c809947a" name="Changes" comment=":sparkles: Update Expenditure DAO">
-      <change afterPath="$PROJECT_DIR$/web/email_check.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/error_page.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/login_failed.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/signup_check_failed.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/JSP_webProject_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/JSP_webProject_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/099a1b64-06f2-4321-b67c-1721f3226089.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/099a1b64-06f2-4321-b67c-1721f3226089.xml" afterDir="false" />
+    <list default="true" id="a5302081-c2d0-4d3e-ba3a-9af8c809947a" name="Changes" comment=":sparkles: Add login and signup function (*there is a bug! must be fixed!!*)">
+      <change afterPath="$PROJECT_DIR$/web/charts.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/assets/img/undraw_posting_photo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/assets/img/undraw_profile.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/assets/img/undraw_profile_1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/assets/img/undraw_profile_2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/assets/img/undraw_profile_3.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/assets/img/undraw_rocket.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/css/sb-admin-2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/css/sb-admin-2.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/js/demo/chart-area-demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/js/demo/chart-bar-demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/js/demo/chart-pie-demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/js/demo/datatables-demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/js/sb-admin-2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/js/sb-admin-2.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/scss/_buttons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/scss/_cards.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/scss/_charts.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/scss/_dropdowns.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/scss/_error.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/scss/_footer.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/scss/_global.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/scss/_login.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/scss/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/scss/_navs.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/scss/_utilities.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/scss/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/scss/navs/_global.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/scss/navs/_sidebar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/scss/navs/_topbar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/scss/sb-admin-2.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/scss/utilities/_animation.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/scss/utilities/_background.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/scss/utilities/_border.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/scss/utilities/_display.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/scss/utilities/_progress.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/scss/utilities/_rotate.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/scss/utilities/_text.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/tables.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/DBUtill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/DBUtill.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/FormChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/UserManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/login_process.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/login_process.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/resources/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/resources/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/signup01.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/signup.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/signup02.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/signup_check_success.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/signup_process.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/signup_process.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/error_page.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/error_page.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/main.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/signup_check_success.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/signup_check_success.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,41 +112,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_directory_selection&quot;: &quot;C:/Users/82107/IdeaProjects/JSP_webProject/src/dto&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/82107/Downloads/mysql-connector-java-8.0.29.jar&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.3321839&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "last_directory_selection": "C:/Users/82107/IdeaProjects/JSP_webProject/src/dto",
+    "last_opened_file_path": "C:/Users/82107/IdeaProjects/JSP_webProject/web",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.3321839",
+    "settings.editor.selected.configurable": "File.Encoding"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\82107\IdeaProjects\JSP_webProject\web\resources\assets\img" />
-      <recent name="C:\Users\82107\IdeaProjects\JSP_webProject\web\WEB-INF\lib" />
       <recent name="C:\Users\82107\IdeaProjects\JSP_webProject\web" />
-      <recent name="C:\Users\82107\IdeaProjects\JSP_webProject" />
-      <recent name="C:\Users\82107\IdeaProjects\JSP_webProject\web\resources\assets\mp4" />
+      <recent name="C:\Users\82107\IdeaProjects\JSP_webProject\web\resources\assets\img" />
+      <recent name="C:\Users\82107\IdeaProjects\JSP_webProject\web\resources\css" />
+      <recent name="C:\Users\82107\IdeaProjects\JSP_webProject\web\resources\js" />
+      <recent name="C:\Users\82107\IdeaProjects\JSP_webProject\web\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\82107\IdeaProjects\JSP_webProject\web\resources\js" />
+      <recent name="C:\Users\82107\IdeaProjects\JSP_webProject\web\resources" />
       <recent name="C:\Users\82107\IdeaProjects\JSP_webProject\web" />
       <recent name="C:\Users\82107\IdeaProjects\JSP_webProject\web\resources\assets" />
       <recent name="C:\Users\82107\IdeaProjects\JSP_webProject\web\resources\assets\img" />
-      <recent name="C:\Users\82107\IdeaProjects\JSP_webProject\web\resources\assets\mp4" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="src" />
@@ -249,7 +276,9 @@
       <workItem from="1669594028477" duration="88000" />
       <workItem from="1669611877221" duration="16149000" />
       <workItem from="1669650680956" duration="2431000" />
-      <workItem from="1669653151315" duration="197000" />
+      <workItem from="1669653151315" duration="382000" />
+      <workItem from="1669679510071" duration="4872000" />
+      <workItem from="1669712442825" duration="2767000" />
     </task>
     <task id="LOCAL-00001" summary=":art: Improve Design">
       <created>1668845460783</created>
@@ -321,7 +350,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669643281829</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary=":sparkles: Add login and signup function (*there is a bug! must be fixed!!*)">
+      <created>1669653451533</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1669653451533</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -348,7 +384,8 @@
     <MESSAGE value=":sparkles: Add User DAO" />
     <MESSAGE value=":sparkles: Add Expenditure DAO" />
     <MESSAGE value=":sparkles: Update Expenditure DAO" />
-    <option name="LAST_COMMIT_MESSAGE" value=":sparkles: Update Expenditure DAO" />
+    <MESSAGE value=":sparkles: Add login and signup function (*there is a bug! must be fixed!!*)" />
+    <option name="LAST_COMMIT_MESSAGE" value=":sparkles: Add login and signup function (*there is a bug! must be fixed!!*)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -384,19 +421,9 @@
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/web/signup_check_success.jsp</url>
-          <line>36</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/web/signup_check_success.jsp</url>
-          <line>37</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/web/signup_check_success.jsp</url>
-          <line>38</line>
-          <option name="timeStamp" value="14" />
+          <url>file://$PROJECT_DIR$/web/signup_process.jsp</url>
+          <line>5</line>
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/dao/UserManager.java</url>

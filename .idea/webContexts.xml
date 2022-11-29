@@ -5,6 +5,7 @@
       <map>
         <entry key="file://$PROJECT_DIR$/web/index.jsp" value="file://$PROJECT_DIR$/web" />
         <entry key="file://$PROJECT_DIR$/web/login.jsp" value="file://$PROJECT_DIR$/web" />
+        <entry key="file://$PROJECT_DIR$/web/main.jsp" value="file://$PROJECT_DIR$/web" />
         <entry key="file://$PROJECT_DIR$/web/register.jsp" value="file://$PROJECT_DIR$/web" />
         <entry key="file://$PROJECT_DIR$/web/resources/css" value="file://$PROJECT_DIR$/web" />
         <entry key="file://$PROJECT_DIR$/web/sign_up.jsp" value="file://$PROJECT_DIR$/web" />

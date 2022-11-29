@@ -18,6 +18,7 @@
     let pwd = form.pwd;
     let repwd = form.repwd;
     let uname = form.uname;
+    let email_id = document.getElementById("email_id");
     //비밀번호 영문자+숫자+특수조합(8~25자리 입력) 정규식
     let pwdCheck = /^(?=.*[a-zA-Z])(?=.*[!@#$%^*+=-])(?=.*[0-9]).{8,25}$/;
 
@@ -35,6 +36,7 @@
       uname.focus();
     } else {
       form.method = "post";
+      form.setAttribute("email_id", email_id);
       form.action = "signup_process.jsp";
       form.submit();
     }
@@ -52,12 +54,11 @@ background-size: cover;" onLoad="document.signupForm.email_id.focus()">
             <div class="mb-md-3 mt-md-4 pb-5">
               <!-- 다국어 처리 필요 1 -->
               <h2 class="fw-bold mb-4 text-uppercase index">Sign Up</h2>
-
-              <% String email_id = request.getParameter("email_id");%>
               <!-- 폼 태그 -->
               <div class="form-outline form-white mb-4" style="pointer-events : none;">
                 <label class="col-form-label script">이메일</label>
-                <input type="text" name="email_id" class="form-control form-control-lg" value=<%=email_id%> disabled/>
+                <% String email_id = request.getParameter("email_id"); %>
+                <input type="text" id = "email_id" name ="email_id" class="form-control form-control-lg" value=<%=email_id%> disabled/>
                 <!-- 다국어 처리 필요 3 -->
                 <p class="m-3" style="font-size: small; color: blue">사용 가능한 이메일입니다.</p>
               </div>

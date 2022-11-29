@@ -22,16 +22,16 @@
             <!-- 다국어 처리 필요 2 -->
             <p class="fs-3 fw-lighter mb-5"
                style="font-family: Noto Sans KR, sans-serif; letter-spacing: 1px; white-space:nowrap">
-                메인화면으로 이동해서 다시 시도해주세요.
+                index로 이동해서 다시 시도해주세요.
             </p>
 
             <div class="row input-group-newsletter">
                 <div class="col-auto">
                     <!-- 다국어 처리 필요 3 -->
-                    <button onclick="location='main.jsp'" class="btn btn-outline-light"
+                    <button onclick="location='index.jsp'" class="btn btn-outline-light"
                             style="font-family: Noto Sans KR, sans-serif; font-weight: lighter;
                             font-size: medium; letter-spacing: 1.3px;"
-                            id="signUpButton" type="submit">메인화면
+                            id="signUpButton" type="submit">인덱스 화면
                     </button>
                 </div>
             </div>
