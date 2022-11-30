@@ -22,15 +22,17 @@ public class ExpenditureDAO {
 
         try {
             conn = DBUtill.getConnection();
-            String sql = "insert into expenditure values(?,?,?,?,?,?,?)";
+            String sql = "insert into expenditure values(?,?,?,?,?,?,?,?)";
             PreparedStatement pstmt = conn.prepareStatement(sql);
             pstmt.setInt(1, expenditure.getExpend_id());
-            pstmt.setInt(2, expenditure.getAmount());
-            pstmt.setDate(3, expenditure.getExpend_date());
-            pstmt.setString(4, expenditure.getImg());
-            pstmt.setString(5, expenditure.getCategory());
-            pstmt.setString(6, expenditure.getDescription());
-            pstmt.setString(7, expenditure.getTagString());
+            pstmt.setString(2, expenditure.getEmail_id());
+            pstmt.setInt(3, expenditure.getAmount());
+            pstmt.setDate(4, expenditure.getExpend_date());
+            pstmt.setString(5, expenditure.getImg());
+            pstmt.setString(6, expenditure.getCategory());
+            pstmt.setString(7, expenditure.getDescription());
+            pstmt.setString(8, expenditure.getTagString());
+
 
             resultCnt = pstmt.executeUpdate();
 
@@ -52,7 +54,7 @@ public class ExpenditureDAO {
             conn = DBUtill.getConnection();
             String sql = "update expenditure set amount=?, expend_date=?, img=?, " +
                     "category=?, description=?, tag=? " +
-                    "where expend_id=?";
+                    "where expend_id=? and email_id=?";
             PreparedStatement pstmt = conn.prepareStatement(sql);
             pstmt.setInt(1, expenditure.getAmount());
             pstmt.setDate(2, expenditure.getExpend_date());
@@ -61,6 +63,7 @@ public class ExpenditureDAO {
             pstmt.setString(5, expenditure.getDescription());
             pstmt.setString(6, expenditure.getTagString());
             pstmt.setInt(7, expenditure.getExpend_id());
+            pstmt.setString(8, expenditure.getEmail_id());
 
             resultCnt = pstmt.executeUpdate();
 
@@ -108,9 +111,9 @@ public class ExpenditureDAO {
 
             while (rs.next()) {
                 Expenditure expenditure =
-                        new Expenditure(rs.getInt(1), rs.getInt(2), rs.getDate(3),
-                                rs.getString(4), rs.getString(5),
-                                rs.getString(6), rs.getString(7));
+                        new Expenditure(rs.getInt(1), rs.getString(2), rs.getInt(3),
+                                rs.getDate(4), rs.getString(5), rs.getString(6),
+                                rs.getString(7), rs.getString(8));
                 list.add(expenditure);
             }
         } catch (Exception e) {
@@ -135,9 +138,9 @@ public class ExpenditureDAO {
             ResultSet rs = stmt.executeQuery(sql);
             if (rs.next()) {
                 expenditure =
-                        new Expenditure(rs.getInt(1), rs.getInt(2), rs.getDate(3),
-                                rs.getString(4), rs.getString(5),
-                                rs.getString(6), rs.getString(7));
+                        new Expenditure(rs.getInt(1), rs.getString(2), rs.getInt(3),
+                                rs.getDate(4), rs.getString(5), rs.getString(6),
+                                rs.getString(7), rs.getString(8));
             }
         } catch (Exception e) {
             e.printStackTrace();

@@ -5,19 +5,33 @@ import java.util.ArrayList;
 
 public class Expenditure {
     private int expend_id;
+
+    private String email_id;
     private int amount;
     private Date expend_date;
     private String img;
     private String category;
     private String description;
     private ArrayList<String> tagList = new ArrayList<String>();
-
     public Expenditure() {
     }
 
-    public Expenditure(int expend_id, int amount, Date expend_date, String img,
+    public Expenditure(int expend_id, String email_id, int amount, Date expend_date, String img,
+                       String category, String description, ArrayList<String> tagList) {
+        this.expend_id = expend_id;
+        this.email_id = email_id;
+        this.amount = amount;
+        this.expend_date = expend_date;
+        this.img = img;
+        this.category = category;
+        this.description = description;
+        this.tagList = tagList;
+    }
+
+    public Expenditure(int expend_id, String email_id, int amount, Date expend_date, String img,
                        String category, String description, String tag) {
         this.expend_id = expend_id;
+        this.email_id = email_id;
         this.amount = amount;
         this.expend_date = expend_date;
         this.img = img;
@@ -51,6 +65,14 @@ public class Expenditure {
                     tagList.add(s);
             }
         }
+    }
+
+    public String getEmail_id() {
+        return email_id;
+    }
+
+    public void setEmail_id(String email_id) {
+        this.email_id = email_id;
     }
 
     public int getAmount() {

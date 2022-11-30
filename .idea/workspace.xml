@@ -10,16 +10,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a5302081-c2d0-4d3e-ba3a-9af8c809947a" name="Changes" comment=":art: Improve Code Structure">
-      <change afterPath="$PROJECT_DIR$/web/profile.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/resources/assets/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/insertData.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/insertData_process.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/JSP_webProject_ear_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/JSP_webProject_ear_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/099a1b64-06f2-4321-b67c-1721f3226089.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/099a1b64-06f2-4321-b67c-1721f3226089.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/error_page.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/error_page.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/ExpenditureDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/ExpenditureDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dto/Expenditure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dto/Expenditure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/commons-fileupload-1.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/commons-io-2.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/charts.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/web/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/main.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/resources/assets/img/undraw_profile_1.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/resources/assets/img/undraw_profile_2.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/resources/assets/img/undraw_profile_3.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/signup/signup_check_success.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/signup/signup_check_success.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/resources/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/resources/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/resources/sql/expenditure.sql" beforeDir="false" afterPath="$PROJECT_DIR$/web/resources/sql/expenditure.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/util/sidebar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/util/sidebar.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/util/topbar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/util/topbar.jsp" afterDir="false" />
     </list>
@@ -86,17 +90,17 @@
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;last_directory_selection&quot;: &quot;C:/Users/82107/IdeaProjects/JSP_webProject/src/dto&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/82107/IdeaProjects/JSP_webProject/web/resources/assets&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/82107/Downloads/jstl-1.2.jar&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Facets&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.3321839&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.build&quot;
   },
   &quot;keyToStringList&quot;: {
     &quot;DatabaseDriversLRU&quot;: [
@@ -125,7 +129,16 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.68">
+    <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="17" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="org.example.Main" />
+      <module name="JSP_webProject" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tomcat 9.0.68" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.68" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <deployment>
         <artifact name="JSP_webProject:war exploded">
@@ -212,6 +225,10 @@
         </option>
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.68" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -250,7 +267,9 @@
       <workItem from="1669679510071" duration="4872000" />
       <workItem from="1669712442825" duration="5708000" />
       <workItem from="1669719053254" duration="17160000" />
-      <workItem from="1669737274343" duration="1033000" />
+      <workItem from="1669737274343" duration="2617000" />
+      <workItem from="1669790016080" duration="8367000" />
+      <workItem from="1669798572008" duration="1385000" />
     </task>
     <task id="LOCAL-00001" summary=":art: Improve Design">
       <created>1668845460783</created>
@@ -343,7 +362,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669720167826</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary=":art: Improve Code Structure">
+      <created>1669738334589</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1669738334589</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
