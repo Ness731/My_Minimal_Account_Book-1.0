@@ -21,7 +21,7 @@
              aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
       </div>
       <h4 class="small font-weight-bold">Customer Database <span
-              class="float-right">60%</span></h4>
+              class="float-right">100%</span></h4>
       <div class="progress mb-4">
         <div class="progress-bar" role="progressbar" style="width: 60%"
              aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>

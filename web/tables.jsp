@@ -8,11 +8,10 @@
 <title>My Minimal Account Book - Tables</title>
 <body id="page-top">
 <div id="wrapper">
-    <%@ include file="util/sidebar.jsp" %>
+    <jsp:include page="util/sidebar.jsp"/>
     <div id="content-wrapper" class="d-flex flex-column">
         <div id="content">
             <%@ include file="util/topbar.jsp" %>
-
             <!-- Begin Page Content -->
             <div class="container-fluid">
                 <!-- Page Heading -->
@@ -60,7 +59,6 @@
                                                 break;
                                         }
                                     }
-
                                     if (expList.isEmpty()) {
                                 %>
                                 <tr>
@@ -104,7 +102,5 @@
 <%@ include file="util/scroll_to_top_button.jsp" %>
 <%@ include file="util/logout_modal.jsp" %>
 <%@ include file="util/js_info.jsp" %>
-
 </body>
-
 </html>

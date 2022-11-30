@@ -9,38 +9,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5302081-c2d0-4d3e-ba3a-9af8c809947a" name="Changes" comment=":sparkles: Add Insert Data function">
-      <change afterPath="$PROJECT_DIR$/web/cards.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/charts.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/login/login_footer.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/resources/assets/img/empty.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/signup/signup_footer.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/util/goal_graph.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/util/insertData.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/util/insertData_process.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/util/js_charts.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/util/table_menu.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+    <list default="true" id="a5302081-c2d0-4d3e-ba3a-9af8c809947a" name="Changes" comment=":sparkles: Add My Table Menu">
+      <change afterPath="$PROJECT_DIR$/src/utility/Calculator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dao/ExpenditureDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/ExpenditureDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dto/Expenditure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dto/Expenditure.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/error_page.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/error_page.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/insertData.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/insertData_process.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/login/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/login/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/login/login_failed.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/login/login_failed.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/cards.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/util/cards.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/main.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/resources/css/sb-admin-2.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/resources/css/sb-admin-2.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/signup/signup.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/signup/signup.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/signup/signup_check_failed.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/signup/signup_check_failed.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/signup/signup_check_success.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/signup/signup_check_success.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/resources/js/demo/chart-area-demo.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/resources/js/demo/chart-area-demo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/resources/vendor/jquery/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/resources/vendor/jquery/jquery.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/tables.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/tables.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/util/footer.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/util/goal_graph.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/util/goal_graph.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/util/insertData.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/util/insertData.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/util/js_info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/util/js_info.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/util/logout_modal.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/util/logout_modal.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/util/sidebar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/util/sidebar.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/util/topbar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/util/topbar.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,11 +56,11 @@
       <list>
         <option value="CSS File" />
         <option value="package-info" />
-        <option value="Class" />
         <option value="HTML File" />
         <option value="JavaScript File" />
         <option value="Enum" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -136,8 +118,8 @@
       <recent name="C:\Users\82107\IdeaProjects\JSP_webProject\web\calendar" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\82107\IdeaProjects\JSP_webProject\web\resources\assets\img" />
       <recent name="C:\Users\82107\IdeaProjects\JSP_webProject\web\util" />
+      <recent name="C:\Users\82107\IdeaProjects\JSP_webProject\web\resources\assets\img" />
       <recent name="C:\Users\82107\IdeaProjects\JSP_webProject\web" />
       <recent name="C:\Users\82107\IdeaProjects\JSP_webProject\web\calendar-04" />
       <recent name="C:\Users\82107\IdeaProjects\JSP_webProject\web\signup" />
@@ -288,7 +270,7 @@
       <workItem from="1669719053254" duration="17160000" />
       <workItem from="1669737274343" duration="2617000" />
       <workItem from="1669790016080" duration="8367000" />
-      <workItem from="1669798572008" duration="25719000" />
+      <workItem from="1669798572008" duration="32653000" />
     </task>
     <task id="LOCAL-00001" summary=":art: Improve Design">
       <created>1668845460783</created>
@@ -395,7 +377,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669800061763</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary=":sparkles: Add My Table Menu">
+      <created>1669826449824</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1669826449824</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -427,7 +416,8 @@
     <MESSAGE value=":art: Improve Code Structure" />
     <MESSAGE value=":art: Add Insert Data function" />
     <MESSAGE value=":sparkles: Add Insert Data function" />
-    <option name="LAST_COMMIT_MESSAGE" value=":sparkles: Add Insert Data function" />
+    <MESSAGE value=":sparkles: Add My Table Menu" />
+    <option name="LAST_COMMIT_MESSAGE" value=":sparkles: Add My Table Menu" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -73,6 +73,6 @@
     </ul>
     <!-- End of Sidebar -->
 </div>
-<jsp:include page="util/js_info.jsp"/>
+<%@include file="js_info.jsp"%>
 </body>
 </html>

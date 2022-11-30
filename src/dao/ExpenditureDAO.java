@@ -1,8 +1,10 @@
 package dao;
 
 import dto.Expenditure;
+import utility.Calculator;
 
 import java.sql.*;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -32,7 +34,6 @@ public class ExpenditureDAO {
             pstmt.setString(6, expenditure.getCategory());
             pstmt.setString(7, expenditure.getDescription());
             pstmt.setString(8, expenditure.getTagString());
-
 
             resultCnt = pstmt.executeUpdate();
 
@@ -123,6 +124,24 @@ public class ExpenditureDAO {
         return getExpList(sql);
     }
 
+    public int generateExpId() throws SQLException {
+        String sql = "select * from expenditure order by expend_id desc limit 1";
+        return getIntValue(sql)+1;
+    }
+
+    public int getSumOfWeeklyExp() throws SQLException {
+        String start = Calculator.getCurMonday();
+        String end = Calculator.getCurSunday();
+        String sql = "select sum(amount) from expenditure where expend_date between \""+start+"\" and \""+end+"\"";
+        return getIntValue(sql);
+    }
+
+    public int getSumOfMonthlyExp() throws SQLException {
+        String start = Calculator.getCurFirstDay();
+        String end = Calculator.getCurLastDay();
+        String sql = "select sum(amount) from expenditure where expend_date between \""+start+"\" and \""+end+"\"";
+        return getIntValue(sql);
+    }
     public List<Expenditure> getExpList(String query) throws SQLException {
         List<Expenditure> list = new ArrayList<Expenditure>();
         Statement stmt = null;
@@ -175,18 +194,18 @@ public class ExpenditureDAO {
         return expenditure;
     }
 
-    public int generateExpId() throws SQLException {
-        int expId = 0;
+    public int getIntValue(String query) throws SQLException {
+        int value = 0;
         Statement stmt = null;
         Connection conn = null;
         try {
             conn = DBUtill.getConnection();
             stmt = conn.createStatement();
-            String sql = "select * from expenditure order by expend_id desc limit 1";
+            String sql = query;
             System.out.println(sql);
             ResultSet rs = stmt.executeQuery(sql);
             if (rs.next()) {
-                expId = rs.getInt(1); // 가장 최신 데이터의 expend_id를 가져옴
+                value = rs.getInt(1);
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -194,7 +213,7 @@ public class ExpenditureDAO {
             if(conn != null)
                 conn.close();
         }
-        return expId + 1; //데이터가 아무것도 없다면 1을 반환
+        return value;
     }
 
     private boolean isCategory(String input) {

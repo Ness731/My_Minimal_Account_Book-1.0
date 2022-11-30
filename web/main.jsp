@@ -19,13 +19,14 @@
                                 <h6 class="m-0 font-weight-bold text-primary">소비 기록 추가하기</h6>
                             </div>
                             <div class="card-body">
-                                <jsp:include page="util/insertData.jsp" flush="false"/>
+                                <%@include file="util/insertData.jsp"%>
+                                <!--jsp:include page="util/insertData.jsp" flush="false"/-->
                             </div>
                         </div>
                     </div>
                     <div class="col-xl-9 col-lg-12">
                         <div class="row">
-                            <jsp:include page="cards.jsp"/>
+                            <%@include file="util/cards.jsp"%>
                         </div>
                         <!-- Area Chart -->
                         <div class="card shadow mb-4">

@@ -13,6 +13,7 @@
     <script src="http://code.jquery.com/ui/1.8.18/jquery-ui.min.js"></script>
 </head>
 <script type="text/javascript">
+    //$.noConflict();
     $(document).ready(function () {
         $.datepicker.setDefaults($.datepicker.regional['ko']);
         $("#expend_date").datepicker({
@@ -87,7 +88,7 @@
 </style>
 <body>
 <!-- 폼 태그 시작-->
-<form id="dataForm" action="../insertData_process.jsp" method="post" enctype="multipart/form-data">
+<form id="dataForm" action="util/insertData_process.jsp" method="post" enctype="multipart/form-data">
     <div class="row d-flex justify-content-center align-items-center">
         <div class="p-4 text-center">
                 <div class="mb-md-0 mt-md-0 pb-5">
