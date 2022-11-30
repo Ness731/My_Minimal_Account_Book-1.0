@@ -51,33 +51,33 @@ background-size: cover;" onLoad="document.signupForm.email_id.focus()">
       <div class="col-12 col-md-8 col-lg-6 col-xl-5">
         <div class="card bg-white text-black" style="border-radius: 1rem; z-index: 2;">
           <div class="card-body p-5 text-center">
-            <div class="mb-md-3 mt-md-4 pb-5">
+            <div class="mb-md-0 mt-md-4 pb-5">
               <!-- 다국어 처리 필요 1 -->
               <h2 class="fw-bold mb-4 text-uppercase index">Sign Up</h2>
               <!-- 폼 태그 -->
-              <div class="form-outline form-white mb-4" style="pointer-events : none;">
+              <div class="form-outline form-white mb-3" style="pointer-events : none;">
                 <label class="col-form-label script">이메일</label>
                 <% String email_id = request.getParameter("email_id"); %>
-                <input type="text" id = "email_id" name ="email_id" class="form-control form-control-lg" value=<%=email_id%> disabled/>
+                <input type="text" id = "email_id" name ="email_id" class="form-control form-control-sm" value=<%=email_id%> disabled/>
                 <!-- 다국어 처리 필요 3 -->
                 <p class="m-3" style="font-size: small; color: blue">사용 가능한 이메일입니다.</p>
               </div>
 
-              <div class="form-outline form-white mb-4">
+              <div class="form-outline form-white mb-3">
                 <label class="col-form-label script">비밀번호</label>
-                <input type="password" name="pwd" class="form-control form-control-lg"/>
+                <input type="password" name="pwd" class="form-control form-control-sm"/>
                 <!-- 다국어 처리 필요 4 -->
               </div>
 
-              <div class="form-outline form-white mb-4">
+              <div class="form-outline form-white mb-3">
                 <label class="col-form-label script" for="repwd">비밀번호 확인</label>
-                <input type="password" name="repwd" id="repwd" class="form-control form-control-lg"/>
+                <input type="password" name="repwd" id="repwd" class="form-control form-control-sm"/>
                 <!-- 다국어 처리 필요 5 -->
               </div>
 
-              <div class="form-outline form-white mb-4">
+              <div class="form-outline form-white mb-3">
                 <label class="col-form-label script" for="uname">닉네임</label>
-                <input type="text" name="uname" id="uname" class="form-control form-control-lg"/>
+                <input type="text" name="uname" id="uname" class="form-control form-control-sm"/>
                 <!-- 다국어 처리 필요 6 -->
               </div>
               <!-- 다국어 처리 필요 7 -->
@@ -86,16 +86,7 @@ background-size: cover;" onLoad="document.signupForm.email_id.focus()">
                 Sign Up
               </button>
             </div>
-            <div>
-              <!-- 다국어 처리 필요 8 -->
-              <p class="mb-0 script-normal">계정이 이미 있으십니까?
-                <!-- 다국어 처리 필요 9 -->
-                <a href="../login/login.jsp" class="text-black-50 fw-bold script-normal">로그인</a>
-              </p>
-              <p class="mb-0 script-normal">
-                <a href="../index.jsp" class="text-black-50 fw-bold script-normal">메인으로</a>
-              </p>
-            </div>
+            <%@ include file="../signup/signup_footer.jsp"%>
           </div>
         </div>
       </div>

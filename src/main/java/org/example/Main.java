@@ -10,14 +10,6 @@ public class Main {
     public static void main(String[] args) throws Exception {
         // DAO Test
         ExpenditureDAO test = ExpenditureDAO.getInstance();
-
-        Date date = new Date((2021 - 1900), 11, 28);
-        ArrayList<String> tag = new ArrayList<String>();
-        tag.add("#muckbang");
-        tag.add("#cola");
-        tag.add("#pizza");
-
-        Expenditure expend = new Expenditure(2, "wjdwlswn848@naver.com", 5000, date, "", "", "", tag);
-        test.insertExpenditure(expend);
+        System.out.println("생성된 아이디: " + test.generateExpId());
     }
 }

@@ -42,11 +42,14 @@ public class Expenditure {
 
     public void toArrayList(String tag) {
         ArrayList<String> tl = new ArrayList<String>();
-        //문자열 split
-        int begin = 1, dest = tag.length() - 1;
-        tag = tag.substring(begin, dest); // '[', ']' 문자 제거
-        String[] tagStr = tag.split("#"); // 해시태그 분리
-
+        // '[', ']' 문자 제거
+        if(tag.charAt(0)=='[' && tag.charAt(tag.length()-1)==']'){
+            int begin = 1, dest = tag.length() - 1;
+            tag = tag.substring(begin, dest);
+        }
+        // 해시태그 분리
+        String[] tagStr = tag.split("#");
+        // 콤마 및 공백 제거
         for (String s : tagStr) {
             if(!s.isEmpty()) {
                 int last = s.length() - 1;

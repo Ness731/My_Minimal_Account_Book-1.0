@@ -8,7 +8,7 @@ import java.util.List;
 
 public class ExpenditureDAO {
     private static ExpenditureDAO instance;
-
+    String[] category = {"food", "hobby", "shopping", "living", "medical", "transpt", "finance", "other"};
     private ExpenditureDAO(){
     }
     public static ExpenditureDAO getInstance(){
@@ -98,15 +98,39 @@ public class ExpenditureDAO {
         return resultCnt;
     }
 
-    // 부서의 전체 리스트
-    public List<Expenditure> listExpenditure() throws SQLException {
+    public List<Expenditure> orderByDateDesc() throws SQLException {
+        String sql = "select * from expenditure order by expend_date desc";
+        return getExpList(sql);
+    }
+
+    public List<Expenditure> orderByDateAsc() throws SQLException {
+        String sql = "select * from expenditure order by expend_date asc";
+        return getExpList(sql);
+    }
+
+    public List<Expenditure> orderByAmountDesc() throws SQLException {
+        String sql = "select * from expenditure order by amount desc";
+        return getExpList(sql);
+    }
+
+    public List<Expenditure> orderByAmountAsc() throws SQLException {
+        String sql = "select * from expenditure order by amount asc";
+        return getExpList(sql);
+    }
+
+    public List<Expenditure> orderByCategory(String category) throws SQLException {
+        String sql = "select * from expenditure where category like \""+category+"\"";
+        return getExpList(sql);
+    }
+
+    public List<Expenditure> getExpList(String query) throws SQLException {
         List<Expenditure> list = new ArrayList<Expenditure>();
         Statement stmt = null;
         Connection conn = null;
         try {
             conn = DBUtill.getConnection();
             stmt = conn.createStatement();
-            String sql = "select * from expenditure order by expend_id";
+            String sql = query;
             ResultSet rs = stmt.executeQuery(sql);
 
             while (rs.next()) {
@@ -125,8 +149,8 @@ public class ExpenditureDAO {
         return list;
     }
 
-    // 부서 하나 검색
-    public Expenditure searchExpenditure(String expend_id) throws SQLException {
+    // 소비 하나 검색
+    public Expenditure searchExpenditureById(String expend_id) throws SQLException {
         Expenditure expenditure = null;
         Statement stmt = null;
         Connection conn = null;
@@ -149,5 +173,35 @@ public class ExpenditureDAO {
                 conn.close();
         }
         return expenditure;
+    }
+
+    public int generateExpId() throws SQLException {
+        int expId = 0;
+        Statement stmt = null;
+        Connection conn = null;
+        try {
+            conn = DBUtill.getConnection();
+            stmt = conn.createStatement();
+            String sql = "select * from expenditure order by expend_id desc limit 1";
+            System.out.println(sql);
+            ResultSet rs = stmt.executeQuery(sql);
+            if (rs.next()) {
+                expId = rs.getInt(1); // 가장 최신 데이터의 expend_id를 가져옴
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            if(conn != null)
+                conn.close();
+        }
+        return expId + 1; //데이터가 아무것도 없다면 1을 반환
+    }
+
+    private boolean isCategory(String input) {
+        System.out.println("입력값: "+input);
+        for(String c : category)
+            if(input.equals(c))
+                return true;
+        return false;
     }
 }

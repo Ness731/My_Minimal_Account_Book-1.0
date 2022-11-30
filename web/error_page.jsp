@@ -17,12 +17,12 @@
             <!-- 다국어 처리 필요 1 -->
             <h1 class="fs-1 fw-bold mb-4"
                 style="font-family: Noto Sans KR, sans-serif; letter-spacing: 1.1px; white-space:nowrap">
-                앗! 오류가 발생했습니다!
+                앗! 오류가 발생했습니다 :(
             </h1>
             <!-- 다국어 처리 필요 2 -->
             <p class="fs-3 fw-lighter mb-5"
                style="font-family: Noto Sans KR, sans-serif; letter-spacing: 1px; white-space:nowrap">
-                index로 이동해서 다시 시도해주세요.
+                첫 화면으로 이동해서 다시 시도해주세요.
             </p>
 
             <div class="row input-group-newsletter">
@@ -31,7 +31,7 @@
                     <button onclick="location='../index.jsp'" class="btn btn-outline-light"
                             style="font-family: Noto Sans KR, sans-serif; font-weight: lighter;
                             font-size: medium; letter-spacing: 1.3px;"
-                            id="signUpButton" type="submit">인덱스 화면
+                            id="signUpButton" type="submit">처음으로
                     </button>
                 </div>
             </div>

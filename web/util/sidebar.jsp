@@ -1,3 +1,8 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<meta charset="utf-8"/>
+
+<html>
+<body>
 <!-- Sidebar -->
 <div id="wrapper">
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
@@ -26,7 +31,13 @@
         <!-- Divider -->
         <hr class="sidebar-divider">
 
-        <!-- Nav Item - Tables -->
+        <!-- Nav Item - Charts -->
+        <li class="nav-item">
+            <a class="nav-link" href="../charts.jsp">
+                <i class="fas fa-fw fa-chart-line"></i>
+                <span>Charts</span></a>
+
+            <!-- Nav Item - Tables -->
         <li class="nav-item">
             <a class="nav-link" href="../tables.jsp">
                 <i class="fas fa-fw fa-table"></i>
@@ -36,12 +47,32 @@
         <!-- Divider -->
         <hr class="sidebar-divider d-none d-md-block">
 
-        <!-- Nav Item - Tables -->
+
+        <!-- Nav Item - User Information -->
         <li class="nav-item">
             <a class="nav-link" href="../profile.jsp">
-                <i class="fas fa-fw fa-table"></i>
-                <span>Profile</span></a>
+                <i class="fas fa-user"></i>
+                Profile
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="#" data-toggle="modal" data-target="#logoutModal">
+                <i class="fas fa-sign-out-alt"></i>
+                Logout
+            </a>
+        </li>
+
+        <li class="nav-item" style="position: fixed; bottom: 10px; left: 0px;">
+            <div class="container my-auto">
+                <div class="copyright text-center my-auto" style="color: lightgrey; font-size: 15px">
+                    <span style="">Copyright &copy<br>My Minimal Account Book</span>
+                </div>
+            </div>
         </li>
     </ul>
     <!-- End of Sidebar -->
 </div>
+<jsp:include page="util/js_info.jsp"/>
+</body>
+</html>
