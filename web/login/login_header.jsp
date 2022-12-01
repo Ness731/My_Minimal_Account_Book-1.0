@@ -1,3 +1,4 @@
+<%@ page errorPage = "../index_error.jsp" %>
 <head>
   <meta charset="utf-8"/>
   <!-- 다국어 처리 필요 9 -->

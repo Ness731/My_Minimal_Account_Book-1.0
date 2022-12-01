@@ -83,18 +83,20 @@ public class ExpenditureDAO {
 
     }
 
-    public int deleteExpenditure(String email_id) throws SQLException {
+    public int deleteExpenditure(String expend_id, String expend_date) throws SQLException {
         int resultCnt = 0;
         Connection conn = null;
         try {
             conn = DBUtill.getConnection();
-            String sql = "delete from expenditure where expend_id=?";
+            String sql = "delete from expenditure where expend_id=? and expend_date like ?";
             PreparedStatement pstmt = conn.prepareStatement(sql);
-            pstmt.setString(1, email_id);
+            pstmt.setString(1, expend_id);
+            pstmt.setString(2, expend_date);
             resultCnt = pstmt.executeUpdate();
             pstmt.close();
         } catch (Exception e) {
             e.printStackTrace();
+            return -1;
         } finally {
             if (conn != null)
                 conn.close();

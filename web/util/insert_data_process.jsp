@@ -30,7 +30,7 @@
     try {
         expDAO.insertExpenditure(exp);
     } catch (SQLException e) {
-        response.sendRedirect("../error_page.jsp");
+        response.sendRedirect("../main_error.jsp");
     } finally {
         response.sendRedirect("../main.jsp");
     }

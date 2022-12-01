@@ -56,12 +56,12 @@
                 tag.focus();
             } else {
                 form.method = "post";
-                form.action = "../util/insertData_process.jsp";
+                form.action = "../util/insert_data_process.jsp";
                 form.submit();
             }
         } else {
             form.method = "post";
-            form.action = "../util/insertData_process.jsp";
+            form.action = "../util/insert_data_process.jsp";
             form.submit();
         }
     }

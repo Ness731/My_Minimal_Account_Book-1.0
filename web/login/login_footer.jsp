@@ -7,7 +7,7 @@
 </head>
 <div>
     <!-- 다국어 처리 필요 6 -->
-    <p class="mb-0 script-normal">계정이 없으십니까?
+    <p class="mb-0 script-normal">계정이 없으신가요?
         <!-- 다국어 처리 필요 7 -->
         <a href="../signup/signup.jsp" class="text-white-50 fw-bold script-normal" style="margin-left: 10px">회원가입</a>
     </p>

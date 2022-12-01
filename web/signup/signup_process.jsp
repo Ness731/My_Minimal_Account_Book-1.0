@@ -13,7 +13,7 @@
     if (userMgr.signUp(email_id, pwd, uname)) {
         response.sendRedirect("../welcome.jsp");
     } else {
-        response.sendRedirect("../error_page.jsp");
+        response.sendRedirect("../index_error.jsp");
     }
 %>
 </html>

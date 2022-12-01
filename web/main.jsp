@@ -19,8 +19,8 @@
                                 <h6 class="m-0 font-weight-bold text-primary">소비 기록 추가하기</h6>
                             </div>
                             <div class="card-body">
-                                <%@include file="util/insertData.jsp"%>
-                                <!--jsp:include page="util/insertData.jsp" flush="false"/-->
+                                <!--%@include file="util/insert_data.jsp"%-->
+                                <jsp:include page="util/insert_data.jsp" flush="false"/>
                             </div>
                         </div>
                     </div>
