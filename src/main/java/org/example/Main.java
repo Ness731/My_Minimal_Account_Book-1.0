@@ -9,7 +9,6 @@ import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) throws Exception {
         // DAO Test
-        ExpenditureDAO test = ExpenditureDAO.getInstance();
-        System.out.println("이번주소비: " + test.getSumOfWeeklyExp());
+        System.out.println(ExpenditureDAO.getInstance().getRecordCnt());
     }
 }

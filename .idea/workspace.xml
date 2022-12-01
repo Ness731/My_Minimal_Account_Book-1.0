@@ -10,25 +10,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a5302081-c2d0-4d3e-ba3a-9af8c809947a" name="Changes" comment=":bug: Fix a Bug in DatePicker..">
-      <change afterPath="$PROJECT_DIR$/web/login/login_header.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/signup/signup_header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/099a1b64-06f2-4321-b67c-1721f3226089.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/099a1b64-06f2-4321-b67c-1721f3226089.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dto/Expenditure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dto/Expenditure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/login/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/login/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/login/login_failed.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/login/login_failed.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/ExpenditureDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/ExpenditureDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utility/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utility/Calculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/main.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/resources/css/sb-admin-2.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/resources/css/sb-admin-2.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/resources/css/sb-admin-2.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/resources/css/sb-admin-2.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/resources/sql/user.sql" beforeDir="false" afterPath="$PROJECT_DIR$/web/resources/sql/user.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/resources/vendor/fontawesome-free/css/all.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/resources/vendor/fontawesome-free/css/all.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/signup/signup.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/signup/signup.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/signup/signup_check_failed.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/signup/signup_check_failed.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/signup/signup_check_success.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/signup/signup_check_success.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/signup/signup_process.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/signup/signup_process.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/util/insertData.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/util/insertData.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/resources/js/demo/chart-area-demo.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/resources/js/demo/chart-area-demo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/util/goal_graph.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/util/goal_graph.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/util/sidebar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/util/sidebar.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/util/table_menu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/util/table_menu.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +95,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Facets&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.3321839&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.build&quot;
@@ -158,7 +149,7 @@
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="a27a3682-ac9f-4868-b9e0-2c73f06b2fc7" />
+        <option name="BASE_DIRECTORY_NAME" value="18900e61-d7bf-4848-95b2-cad7a9642a11" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -166,7 +157,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="14926" />
+        <option name="DEBUG_PORT" value="13693" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -280,7 +271,8 @@
       <workItem from="1669737274343" duration="2617000" />
       <workItem from="1669790016080" duration="8367000" />
       <workItem from="1669798572008" duration="35679000" />
-      <workItem from="1669856289812" duration="4938000" />
+      <workItem from="1669856289812" duration="11464000" />
+      <workItem from="1669883816246" duration="2019000" />
     </task>
     <task id="LOCAL-00001" summary=":art: Improve Design">
       <created>1668845460783</created>

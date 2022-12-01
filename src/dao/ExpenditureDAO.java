@@ -11,13 +11,16 @@ import java.util.List;
 public class ExpenditureDAO {
     private static ExpenditureDAO instance;
     String[] category = {"food", "hobby", "shopping", "living", "medical", "transpt", "finance", "other"};
-    private ExpenditureDAO(){
+
+    private ExpenditureDAO() {
     }
-    public static ExpenditureDAO getInstance(){
-        if(instance == null)
+
+    public static ExpenditureDAO getInstance() {
+        if (instance == null)
             instance = new ExpenditureDAO();
         return instance;
     }
+
     public int insertExpenditure(Expenditure expenditure) throws SQLException {
         int resultCnt = 0;
         Connection conn = null;
@@ -42,7 +45,7 @@ public class ExpenditureDAO {
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
-            if(conn != null)
+            if (conn != null)
                 conn.close();
         }
         return resultCnt;
@@ -73,7 +76,7 @@ public class ExpenditureDAO {
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
-            if(conn != null)
+            if (conn != null)
                 conn.close();
         }
         return resultCnt;
@@ -93,7 +96,7 @@ public class ExpenditureDAO {
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
-            if(conn != null)
+            if (conn != null)
                 conn.close();
         }
         return resultCnt;
@@ -120,28 +123,80 @@ public class ExpenditureDAO {
     }
 
     public List<Expenditure> orderByCategory(String category) throws SQLException {
-        String sql = "select * from expenditure where category like \""+category+"\"";
+        String sql = "select * from expenditure where category like \"" + category + "\"";
         return getExpList(sql);
     }
 
     public int generateExpId() throws SQLException {
         String sql = "select * from expenditure order by expend_id desc limit 1";
-        return getIntValue(sql)+1;
+        return getIntValue(sql) + 1;
     }
 
     public int getSumOfWeeklyExp() throws SQLException {
         String start = Calculator.getCurMonday();
         String end = Calculator.getCurSunday();
-        String sql = "select sum(amount) from expenditure where expend_date between \""+start+"\" and \""+end+"\"";
+        String sql = "select sum(amount) from expenditure where expend_date between \"" + start + "\" and \"" + end + "\"";
         return getIntValue(sql);
     }
 
     public int getSumOfMonthlyExp() throws SQLException {
         String start = Calculator.getCurFirstDay();
         String end = Calculator.getCurLastDay();
-        String sql = "select sum(amount) from expenditure where expend_date between \""+start+"\" and \""+end+"\"";
+        String sql = "select sum(amount) from expenditure where expend_date between \"" + start + "\" and \"" + end + "\"";
         return getIntValue(sql);
     }
+
+    public int[] getSumOfAllMonthlyExp() throws SQLException {
+        int[] sumArr = new int[12];
+        for (int i = 0; i < sumArr.length; i++) {
+            String start = Calculator.getFirstDay(i + 1);
+            String end = Calculator.getLastDay(i + 1);
+            String sql = "select sum(amount) from expenditure where expend_date between \"" + start + "\" and \"" + end + "\"";
+            sumArr[i] = getIntValue(sql);
+        }
+        return sumArr;
+    }
+
+    public int getMonthlySavingRate() throws SQLException {
+        int currMonth = LocalDate.now().getMonthValue();
+        int pre, crr;
+        String preStart, preEnd;
+        // 1. 지난주 소비
+        if(currMonth == 1){
+            preStart = Calculator.getFirstDay(12);
+            preEnd = Calculator.getLastDay(12);
+        } else {
+            preStart = Calculator.getFirstDay(currMonth-1);
+            preEnd = Calculator.getLastDay(currMonth-1);
+        }
+        String preSql = "select sum(amount) from expenditure where expend_date between \"" + preStart + "\" and \"" + preEnd + "\"";
+        pre = getIntValue(preSql);
+
+        // 2. 이번달 소비
+        crr = getSumOfMonthlyExp();
+
+        return Calculator.getSavingRate(pre, crr);
+    }
+    public int getWeeklySavingRate() throws SQLException {
+        int pre, crr;
+
+        // 1. 지난주 소비
+        String preStart = Calculator.getPreWeekMonday();
+        String preEnd = Calculator.getPreWeekSunday();
+        String presql = "select sum(amount) from expenditure where expend_date between \"" + preStart + "\" and \"" + preEnd + "\"";
+        pre = getIntValue(presql);
+
+        // 2. 이번주 소비
+        crr = getSumOfWeeklyExp();
+
+        return Calculator.getSavingRate(pre, crr);
+    }
+
+    public int getRecordCnt() throws SQLException {
+        String sql = "select count(*) from expenditure";
+        return getIntValue(sql);
+    }
+
     public List<Expenditure> getExpList(String query) throws SQLException {
         List<Expenditure> list = new ArrayList<Expenditure>();
         Statement stmt = null;
@@ -162,7 +217,7 @@ public class ExpenditureDAO {
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
-            if(conn != null)
+            if (conn != null)
                 conn.close();
         }
         return list;
@@ -188,7 +243,7 @@ public class ExpenditureDAO {
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
-            if(conn != null)
+            if (conn != null)
                 conn.close();
         }
         return expenditure;
@@ -210,16 +265,16 @@ public class ExpenditureDAO {
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
-            if(conn != null)
+            if (conn != null)
                 conn.close();
         }
         return value;
     }
 
     private boolean isCategory(String input) {
-        System.out.println("입력값: "+input);
-        for(String c : category)
-            if(input.equals(c))
+        System.out.println("입력값: " + input);
+        for (String c : category)
+            if (input.equals(c))
                 return true;
         return false;
     }

@@ -31,12 +31,6 @@
         <!-- Divider -->
         <hr class="sidebar-divider">
 
-        <!-- Nav Item - Charts -->
-        <li class="nav-item">
-            <a class="nav-link" href="../charts.jsp">
-                <i class="fas fa-fw fa-chart-line"></i>
-                <span>Charts</span></a>
-
             <!-- Nav Item - Tables -->
         <li class="nav-item">
             <a class="nav-link" href="../tables.jsp">
