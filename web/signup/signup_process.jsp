@@ -1,7 +1,10 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page import="dao.UserManager" %>
-<html>
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html lang="en">
 <%
+    request.setCharacterEncoding("utf-8"); // 한글 깨짐 방지
     UserManager userMgr = UserManager.getInstance();
     String email_id = request.getParameter("email_id");
     String pwd = request.getParameter("pwd");

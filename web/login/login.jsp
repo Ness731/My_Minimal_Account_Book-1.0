@@ -1,14 +1,8 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8"/>
-    <!-- 다국어 처리 필요 8 -->
-    <title>Login - My Minimal Account Book</title>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
-    <link href="../resources/css/styles.css?after" rel="stylesheet"/>
-</head>
+<%@ include file="login_header.jsp" %>
+<meta charset="utf-8"/>
 <!-- js 파일로 분리하면 인식이 안돼서 직접 삽입함-->
 <script type="text/javascript">
     function check_loginForm() {

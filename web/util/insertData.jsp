@@ -35,6 +35,38 @@
         });
     });
 </script>
+
+<script type="text/javascript">
+    function check_dataForm() {
+        const form = document.dataForm;
+        //변수에 담아주기
+        let amount = form.amount;
+        let tag = form.tag;
+        let tagCheck = /^(#).*/;
+        let amountCheck = /^[0-9]+$/;
+        if (amount.value == "") {
+            alert("소비한 금액을 입력해주세요.");
+            amount.focus();
+        } else if (!amountCheck.test(amount.value)) {
+            alert("금액은 숫자 형식으로만 기입해주세요.");
+            amount.focus();
+        } else if (tag.value != "") {
+            if (!tagCheck.test(tag.value)) {
+                alert("해시태그는 # 문자로 구문해주세요.");
+                tag.focus();
+            } else {
+                form.method = "post";
+                form.action = "../util/insertData_process.jsp";
+                form.submit();
+            }
+        } else {
+            form.method = "post";
+            form.action = "../util/insertData_process.jsp";
+            form.submit();
+        }
+    }
+</script>
+
 <style>
     /* DatePicker CSS */
     .ui-widget-header {
@@ -88,55 +120,55 @@
 </style>
 <body>
 <!-- 폼 태그 시작-->
-<form id="dataForm" action="util/insertData_process.jsp" method="post" enctype="multipart/form-data">
+<form name="dataForm" enctype = "multipart/form-data";>
     <div class="row d-flex justify-content-center align-items-center">
         <div class="p-4 text-center">
-                <div class="mb-md-0 mt-md-0 pb-5">
-                    <!-- 폼 태그 -->
-                    <div class="form-outline form-white mb-4">
-                        <label class="col-form-label script">소비일자</label>
-                        <input name="expend_date" type="text" id="expend_date" class="form-control form-control-sm"
-                               readonly/>
-                    </div>
-
-                    <div class="form-outline form-white mb-4">
-                        <label class="col-form-label script">금액</label>
-                        <input name="amount" type="number" class="form-control form-control-sm"/>
-                    </div>
-
-                    <div class="form-outline form-white mb-4">
-                        <label class="col-form-label script">카테고리</label>
-                        <select name="category" class="custom-select">
-                            <option value="food">식비</option>
-                            <option value="hobby">취미</option>
-                            <option value="shopping">쇼핑</option>
-                            <option value="living">생활/주거</option>
-                            <option value="medical">의료/피트니스</option>
-                            <option value="transpt">교통/자동차</option>
-                            <option value="finance">금융/세금</option>
-                            <option value="other">기타</option>
-                        </select>
-                    </div>
-
-                    <div class="form-outline form-white mb-4">
-                        <label class="col-form-label script">설명</label>
-                        <textarea name="description" class="form-control" rows="3" style="resize: none;"></textarea>
-                    </div>
-
-                    <div class="form-outline form-white mb-4">
-                        <label class="col-form-label script">태그</label>
-                        <input name="tag" type="text" class="form-control form-control-sm"/>
-                    </div>
-
-                    <div class="form-outline form-white mb-4">
-                        <label class="col-form-label script">이미지</label>
-                        <input name="img" type="file" class="form-control-sm form-control-file"/>
-                    </div>
-                    <!-- 다국어 처리 필요 5 -->
-                    <button class="btn btn-primary px-5 script mb-0" type="submit">
-                        추가하기
-                    </button>
+            <div class="mb-md-0 mt-md-0 pb-5">
+                <!-- 폼 태그 -->
+                <div class="form-outline form-white mb-4">
+                    <label class="col-form-label script">소비일자</label>
+                    <input name="expend_date" type="text" id="expend_date" class="form-control form-control-sm"
+                           readonly/>
                 </div>
+
+                <div class="form-outline form-white mb-4">
+                    <label class="col-form-label script">금액</label>
+                    <input name="amount" type="text" class="form-control form-control-sm"/>
+                </div>
+
+                <div class="form-outline form-white mb-4">
+                    <label class="col-form-label script">카테고리</label>
+                    <select name="category" class="custom-select">
+                        <option value="food">식비</option>
+                        <option value="hobby">취미</option>
+                        <option value="shopping">쇼핑</option>
+                        <option value="living">생활/주거</option>
+                        <option value="medical">의료/피트니스</option>
+                        <option value="transpt">교통/자동차</option>
+                        <option value="finance">금융/세금</option>
+                        <option value="other">기타</option>
+                    </select>
+                </div>
+
+                <div class="form-outline form-white mb-4">
+                    <label class="col-form-label script">설명</label>
+                    <textarea name="description" class="form-control" rows="3" style="resize: none;"></textarea>
+                </div>
+
+                <div class="form-outline form-white mb-4">
+                    <label class="col-form-label script">태그</label>
+                    <input name="tag" type="text" class="form-control form-control-sm"/>
+                </div>
+
+                <div class="form-outline form-white mb-4">
+                    <label class="col-form-label script">이미지</label>
+                    <input name="img" type="file" class="form-control-sm form-control-file"/>
+                </div>
+                <!-- 다국어 처리 필요 5 -->
+                <button class="btn btn-primary px-5 script mb-0" type="button" onclick="check_dataForm()">
+                    추가하기
+                </button>
+            </div>
         </div>
     </div>
 </form>

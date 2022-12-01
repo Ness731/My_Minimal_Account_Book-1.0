@@ -6,7 +6,8 @@
   <div class="dropdown no-arrow mb-0">
     <button class="btn btn-secondary dropdown-toggle ml-3" type="button"
             id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-            aria-expanded="false" style="background-color: steelblue; width: 7rem">날짜순</button>
+            aria-expanded="false"
+            style="background-color: #0e76a8; border-color: #0e76a8; width: 7rem">날짜순</button>
     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
       <a class="dropdown-item" href="../tables.jsp?std=date_desc">최신순</a>
       <a class="dropdown-item" href="../tables.jsp?std=date_asc">오래된순</a>
@@ -16,7 +17,8 @@
   <div class="dropdown no-arrow mb-0">
     <button class="btn btn-secondary dropdown-toggle ml-3" type="button"
             id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-            aria-expanded="false" style="background: seagreen; width: 7rem">금액순</button>
+            aria-expanded="false"
+            style="background: #6b35bb; border-color: #6b35bb; width: 7rem">금액순</button>
     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
       <a class="dropdown-item" href="../tables.jsp?std=amount_desc">높은 금액순</a>
       <a class="dropdown-item" href="../tables.jsp?std=amount_asc">낮은 금액순</a>
@@ -26,7 +28,8 @@
   <div class="dropdown no-arrow mb-0">
     <button class="btn btn-secondary dropdown-toggle ml-3" type="button"
             id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-            aria-expanded="false" style="background: indianred; width: 7rem">카테고리별</button>
+            aria-expanded="false"
+            style="background: #be43c7; border-color: #be43c7; width: 7rem">카테고리별</button>
     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
       <a class="dropdown-item" href="../tables.jsp?std=food" >식비</a>
       <a class="dropdown-item" href="../tables.jsp?std=hobby" >취미</a>

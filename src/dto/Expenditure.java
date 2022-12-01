@@ -41,6 +41,9 @@ public class Expenditure {
     }
 
     public void toArrayList(String tag) {
+        if(tag.isEmpty())
+            return;
+
         ArrayList<String> tl = new ArrayList<String>();
         // '[', ']' 문자 제거
         if(tag.charAt(0)=='[' && tag.charAt(tag.length()-1)==']'){

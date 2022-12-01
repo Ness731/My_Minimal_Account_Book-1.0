@@ -11,14 +11,14 @@
         <a class="sidebar-brand d-flex align-items-center justify-content-center" href="../main.jsp"
            style="margin-top: 1rem">
             <div class="sidebar-brand-icon srotate-n-15">
-                <img src="resources/assets/logo.png" width="45" height="45">
+                <img src="resources/assets/logo.png" style="max-width: 45px; height: auto;">
             </div>
             <div class="sidebar-brand-text mx-2" style="font-size: 12px">My Minimal<br>Account Book</div>
         </a>
         <!-- 프로필사진 **수정요망** -->
         <li class="nav-item active">
-            <img src="resources/assets/img/undraw_profile.svg" width="200" height="200"
-                 style="display:block; margin:auto; margin-top: 1rem; margin-bottom: 1rem">
+            <img src="resources/assets/img/undraw_profile.svg"
+                 style="max-width: 200px; height: auto; display:block; margin:auto; margin-top: 1rem; margin-bottom: 1rem">
         </li>
 
         <!-- Nav Item - Dashboard -->
