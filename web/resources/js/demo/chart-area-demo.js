@@ -29,6 +29,17 @@ function number_format(number, decimals, dec_point, thousands_sep) {
 
 // Area Chart Example
 var ctx = document.getElementById("myAreaChart");
+
+// java -> jstl -> html -> javascript
+var str = document.getElementById("arrayData").innerText;
+console.log(str);
+var strArr = str.toString().split(',');
+var dataset = [];
+strArr.forEach(function(number) {
+  dataset.push(number);
+  console.log(number);
+});
+
 var myLineChart = new Chart(ctx, {
   type: 'line',
   data: {
@@ -47,7 +58,7 @@ var myLineChart = new Chart(ctx, {
       pointHitRadius: 10,
       pointBorderWidth: 2,
       //이부분 고치기
-      data: [0, 10000, 5000, 15000, 10000, 20000, 15000, 25000, 20000, 30000, 25000, 40000],
+      data: dataset,
     }],
   },
   options: {

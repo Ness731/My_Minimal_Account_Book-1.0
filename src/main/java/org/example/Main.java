@@ -8,7 +8,13 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        // DAO Test
-        System.out.println(ExpenditureDAO.getInstance().getRecordCnt());
+        int[] resultList = ExpenditureDAO.getInstance().getSumOfAllMonthlyExp();
+        String arrList = "";
+        for(int i=0; i<resultList.length; i++){
+            arrList += resultList[i];
+            if(i != resultList.length-1)
+                arrList += ",";
+        }
+        System.out.println(arrList);
     }
 }

@@ -3,6 +3,17 @@
 <html lang="en">
 <%@include file="util/main_header.jsp" %>
 <title>My Minimal Account Book - Main</title>
+<%
+    int[] resultList = ExpenditureDAO.getInstance().getSumOfAllMonthlyExp();
+    String arrList = "";
+    for(int i=0; i<resultList.length; i++){
+        arrList += resultList[i];
+        if(i != resultList.length-1)
+            arrList += ",";
+    }
+    System.out.println(arrList);
+%>
+<div id="arrayData"><%=arrList%></div>
 <body id="page-top">
 <div id="wrapper">
     <!-- Content Wrapper -->
@@ -33,18 +44,15 @@
                             <div class="card-header py-3">
                                 <h6 class="m-0 font-weight-bold text-primary">소비 그래프</h6>
                             </div>
-
                             <div class="card-body">
                                 <div class="chart-area" style="height: 16.2rem;">
                                     <canvas id="myAreaChart"></canvas>
                                 </div>
-                                <hr>
                                 지난 1년 간의 나의 소비를 그래프로 확인해보세요.
                             </div>
                         </div>
                         <!-- 목표 달성 그래프 -->
                         <jsp:include page="util/goal_graph.jsp"/>
-
                     </div>
                 </div>
             </div>

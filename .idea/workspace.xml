@@ -9,29 +9,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5302081-c2d0-4d3e-ba3a-9af8c809947a" name="Changes" comment=":sparkles: Add goal graph">
-      <change afterPath="$PROJECT_DIR$/web/main_error.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/util/deleteData.jsp" afterDir="false" />
+    <list default="true" id="a5302081-c2d0-4d3e-ba3a-9af8c809947a" name="Changes" comment=":sparkles: Add Delete Data function">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/ExpenditureDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/ExpenditureDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/error_page.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index_error.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/login/login_footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/login/login_footer.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/login/login_header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/login/login_header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/main.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/resources/css/sb-admin-2.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/resources/css/sb-admin-2.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/resources/scss/_error.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/resources/scss/_error.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/signup/signup_footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/signup/signup_footer.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/signup/signup_header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/signup/signup_header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/signup/signup_process.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/signup/signup_process.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/tables.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/tables.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/util/insertData_process.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/util/insertData_process.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/util/logout_modal.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/util/logout_modal.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/util/main_header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/util/main_header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/resources/js/demo/chart-area-demo.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/resources/js/demo/chart-area-demo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/resources/vendor/chart.js/Chart.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/resources/vendor/chart.js/Chart.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/util/delete_modal.jsp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -41,12 +33,20 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="JSP_webProject" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="JSP_webProject" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
             </expand>
             <select />
@@ -72,7 +72,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JspContextManager">
-    <jsp-to-context jsp-file="file://$PROJECT_DIR$/web/util/insertData.jsp" context-file="file://$PROJECT_DIR$/web/main.jsp" />
+    <jsp-to-context jsp-file="file://$PROJECT_DIR$/web/util/insert_data.jsp" context-file="file://$PROJECT_DIR$/web/main.jsp" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -90,29 +90,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_directory_selection&quot;: &quot;C:/Users/82107/IdeaProjects/JSP_webProject/src/dto&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/82107/IdeaProjects/JSP_webProject/web&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Facets&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.3321839&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.build&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "WebServerToolWindowFactoryState": "false",
+    "last_directory_selection": "C:/Users/82107/IdeaProjects/JSP_webProject/src/dto",
+    "last_opened_file_path": "C:/Users/82107/IdeaProjects/JSP_webProject/web",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Facets",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.3321839",
+    "settings.editor.selected.configurable": "Settings.JavaScript"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="dto" />
@@ -280,7 +280,9 @@
       <workItem from="1669798572008" duration="35679000" />
       <workItem from="1669856289812" duration="11464000" />
       <workItem from="1669883816246" duration="9025000" />
-      <workItem from="1669894581082" duration="1175000" />
+      <workItem from="1669894581082" duration="5292000" />
+      <workItem from="1669903328254" duration="358000" />
+      <workItem from="1669907879605" duration="6489000" />
     </task>
     <task id="LOCAL-00001" summary=":art: Improve Design">
       <created>1668845460783</created>
@@ -408,7 +410,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669887582746</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary=":sparkles: Add Delete Data function">
+      <created>1669896344677</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1669896344677</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -443,7 +452,8 @@
     <MESSAGE value=":sparkles: Add My Table Menu" />
     <MESSAGE value=":bug: Fix a Bug in DatePicker.." />
     <MESSAGE value=":sparkles: Add goal graph" />
-    <option name="LAST_COMMIT_MESSAGE" value=":sparkles: Add goal graph" />
+    <MESSAGE value=":sparkles: Add Delete Data function" />
+    <option name="LAST_COMMIT_MESSAGE" value=":sparkles: Add Delete Data function" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -499,5 +509,9 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
