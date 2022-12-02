@@ -1,4 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <!DOCTYPE html>
 <html lang="en">
 <%@ include file="signup_header.jsp" %>
@@ -26,6 +27,10 @@
 <body style="background-image: url(../resources/assets/img/register_background.jpg);
 background-size: cover;" onLoad="document.signupForm.email_id.focus()">
 
+<fmt:requestEncoding value="UTF-8"/>
+<fmt:setLocale value='<%= session.getAttribute("language")%>'/>
+<fmt:setBundle basename="message" var="resourceBundle"/>
+
 <form name="signupForm">
     <div class="container py-5 h-100 stop-dragging" style="z-index: 2;">
         <div class="row d-flex justify-content-center align-items-center h-100">
@@ -33,40 +38,45 @@ background-size: cover;" onLoad="document.signupForm.email_id.focus()">
                 <div class="card bg-white text-black" style="border-radius: 1rem; z-index: 2;">
                     <div class="card-body p-5 text-center">
                         <div class="mb-md-0 mt-md-4 pb-5">
-                            <!-- 다국어 처리 필요 1 -->
-                            <h2 class="fw-bold mb-4 text-uppercase index">Sign Up</h2>
+                            <h2 class="fw-bold mb-4 text-uppercase index">
+                                Sign Up
+                            </h2>
 
-                            <!-- 폼 태그 -->
                             <div class="form-outline form-white mb-3">
-                                <label class="col-form-label script">이메일</label>
+                                <label class="col-form-label script">
+                                    <fmt:message key="email" bundle="${resourceBundle}"/>
+                                </label>
                                 <input type="text" name="email_id" class="form-control form-control-sm mb-2"/>
-                                <!-- 다국어 처리 필요 3 -->
+
                                 <button class="btn btn-primary btn-sm px-2 fw-light script" type="button"
                                         onclick="check_email()">
-                                    이메일 중복 확인
+                                    <fmt:message key="emailCheck" bundle="${resourceBundle}"/>
                                 </button>
                             </div>
                             <div style="pointer-events : none;">
                                 <div class="form-outline form-white mb-3">
-                                    <label class="col-form-label script">비밀번호</label>
+                                    <label class="col-form-label script">
+                                        <fmt:message key="password" bundle="${resourceBundle}"/>
+                                    </label>
                                     <input type="password" name="pwd" class="form-control form-control-sm" disabled/>
-                                    <!-- 다국어 처리 필요 4 -->
+
                                 </div>
 
                                 <div class="form-outline form-white mb-3">
-                                    <label class="col-form-label script" for="repwd">비밀번호 확인</label>
+                                    <label class="col-form-label script" for="repwd">
+                                        <fmt:message key="passwordCheck" bundle="${resourceBundle}"/>
+                                    </label>
                                     <input type="password" name="repwd" id="repwd" class="form-control form-control-sm"
                                            disabled/>
-                                    <!-- 다국어 처리 필요 5 -->
                                 </div>
 
                                 <div class="form-outline form-white mb-3">
-                                    <label class="col-form-label script" for="uname">닉네임</label>
+                                    <label class="col-form-label script" for="uname">
+                                        <fmt:message key="userName" bundle="${resourceBundle}"/>
+                                    </label>
                                     <input type="text" name="uname" id="uname" class="form-control form-control-sm"
                                            disabled/>
-                                    <!-- 다국어 처리 필요 6 -->
                                 </div>
-                                <!-- 다국어 처리 필요 7 -->
                                 <button class="btn btn-outline-dark btn-lg px-5 script" type="button"
                                         onclick="check_signupForm()" disabled>
                                     Sign Up

@@ -1,4 +1,5 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,18 +12,21 @@
   <link href="resources/css/styles.css?after" rel="stylesheet"/>
 </head>
 <body style="background-image: url(resources/assets/img/register_background.jpg); background-size: cover">
+<fmt:requestEncoding value="UTF-8"/>
+<fmt:setLocale value='<%= request.getParameter("language")%>'/> <!--큰 따옴표를 쓰면 에러 발생-->
+<fmt:setBundle basename="message" var="resourceBundle"/>
 <div class="masthead">
   <div class="masthead-content text-white stop-dragging">
     <div class="container-fluid px-lg-2">
       <!-- 다국어 처리 필요 1 -->
       <h1 class="fs-1 fw-bold mb-4"
           style="font-family: Noto Sans KR, sans-serif; letter-spacing: 1.1px; white-space:nowrap">
-        안녕히 가세요! 👋
+        <fmt:message key="goodBye" bundle="${resourceBundle}"/> 👋
       </h1>
       <!-- 다국어 처리 필요 2 -->
       <p class="fs-3 fw-lighter mb-5"
          style="font-family: Noto Sans KR, sans-serif; letter-spacing: 1px; white-space:nowrap">
-        My Minimal Account Book은 언제든지 다시 시작할 수 있어요.<br>다음에 또 찾아와주세요!
+        <fmt:message key="goodByeMsg" bundle="${resourceBundle}"/>
       </p>
 
       <div class="row input-group-newsletter">
@@ -31,7 +35,7 @@
           <button onclick="location='index.jsp'" class="btn btn-outline-light"
                   style="font-family: Noto Sans KR, sans-serif; font-weight: lighter;
                             font-size: medium; letter-spacing: 1.3px;"
-                  id="signUpButton" type="submit">시작화면
+                  id="signUpButton" type="submit"><fmt:message key="startPage" bundle="${resourceBundle}"/>
           </button>
         </div>
       </div>

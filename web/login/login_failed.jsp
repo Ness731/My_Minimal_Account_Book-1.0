@@ -1,4 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <!DOCTYPE html>
 <html lang="en">
 <%@ include file="login_header.jsp" %>
@@ -32,6 +33,10 @@
 <body style="background-image: url(../resources/assets/img/register_background.jpg);
 background-size: cover;" onLoad="document.signupForm.email.focus()">
 
+<fmt:requestEncoding value="UTF-8"/>
+<fmt:setLocale value='<%= session.getAttribute("language")%>'/>
+<fmt:setBundle basename="message" var="resourceBundle"/>
+
 <form name="loginForm">
   <div class="container py-5 h-100 stop-dragging" style="z-index: 2;">
     <div class="row d-flex justify-content-center align-items-center h-100">
@@ -40,23 +45,33 @@ background-size: cover;" onLoad="document.signupForm.email.focus()">
           <div class="card-body p-5 text-center">
             <div class="mb-md-5 mt-md-4 pb-5">
               <!-- 다국어 처리 필요 1 -->
-              <h2 class="fw-bold mb-2 text-uppercase index">Login</h2>
+              <h2 class="fw-bold mb-2 text-uppercase index">
+                <fmt:message key="login" bundle="${resourceBundle}"/>
+              </h2>
               <!-- 다국어 처리 필요 2 -->
-              <p class="text-white-50 mb-5 script">이메일과 비밀번호를 입력하세요</p>
+              <p class="text-white-50 mb-5 script">
+                <fmt:message key="loginScript" bundle="${resourceBundle}"/>
+              </p>
 
               <!-- 폼 태그 -->
               <div class="form-outline form-white mb-4">
                 <input type="text" name="email_id" class="form-control form-control-lg"/>
                 <!-- 다국어 처리 필요 3 -->
-                <label class="col-form-label script">이메일</label>
+                <label class="col-form-label script">
+                  <fmt:message key="email" bundle="${resourceBundle}"/>
+                </label>
               </div>
 
               <div class="form-outline form-white mb-4">
                 <input type="password" name="pwd" class="form-control form-control-lg"/>
                 <!-- 다국어 처리 필요 4 -->
-                <label class="col-form-label script">비밀번호</label>
+                <label class="col-form-label script">
+                  <fmt:message key="password" bundle="${resourceBundle}"/>
+                </label>
               </div>
-              <p class="mb-3" style="color: indianred">이메일 또는 비밀번호를 잘못 입력했습니다.<br>입력하신 내용을 다시 확인해주세요.</p>
+              <p class="mb-3" style="color: indianred">
+                <fmt:message key="loginFailed" bundle="${resourceBundle}"/>
+              </p>
               <!-- 다국어 처리 필요 5 -->
               <button class="btn btn-outline-light btn-lg px-5 script" type="button" onclick="check_loginForm()">
                 Login

@@ -9,70 +9,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5302081-c2d0-4d3e-ba3a-9af8c809947a" name="Changes" comment=":sparkles: Add Many New Functions..">
-      <change afterPath="$PROJECT_DIR$/web/admin.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/bye.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/resources/assets/img/finance.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/resources/assets/img/food.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/resources/assets/img/hobby.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/resources/assets/img/living.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/resources/assets/img/medical.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/resources/assets/img/no_data.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/resources/assets/img/other.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/resources/assets/img/shopping.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/resources/assets/img/transpt.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/util/delete_user.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/util/withdrawal_process.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/099a1b64-06f2-4321-b67c-1721f3226089.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/099a1b64-06f2-4321-b67c-1721f3226089.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+    <list default="true" id="a5302081-c2d0-4d3e-ba3a-9af8c809947a" name="Changes" comment=":sparkles: Add Admin Mode!">
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/classes/message_en.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/classes/message_ko.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/ExpenditureDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/ExpenditureDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utility/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utility/Calculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/annotations-api.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/catalina-ant.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/catalina-ha.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/catalina-ssi.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/catalina-storeconfig.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/catalina-tribes.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/catalina.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/ecj-4.20.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/el-api.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/jasper-el.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/jasper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/jaspic-api.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/jsp-api.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/servlet-api.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/tomcat-api.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/tomcat-coyote.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/tomcat-dbcp.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/tomcat-i18n-cs.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/tomcat-i18n-de.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/tomcat-i18n-es.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/tomcat-i18n-fr.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/tomcat-i18n-ja.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/tomcat-i18n-ko.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/tomcat-i18n-pt-BR.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/tomcat-i18n-ru.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/tomcat-i18n-zh-CN.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/tomcat-jdbc.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/tomcat-jni.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/tomcat-util-scan.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/tomcat-util.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/tomcat-websocket.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/websocket-api.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/bye.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/bye.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/main.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/profile.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/profile.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/tables.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/tables.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/util/bar_graph.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/util/bar_graph.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/util/best_category.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/util/best_category.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/util/cards.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/util/cards.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/util/change_pwd.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/util/change_pwd.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/util/delete_data.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/util/delete_data.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/util/insert_data_process.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/util/insert_data_process.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index_error.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index_error.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/login/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/login/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/login/login_failed.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/login/login_failed.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/signup/signup.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/signup/signup.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/signup/signup_check_failed.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/signup/signup_check_failed.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/signup/signup_check_success.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/signup/signup_check_success.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/signup/signup_footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/signup/signup_footer.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/welcome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/welcome.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -148,42 +98,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_directory_selection&quot;: &quot;C:/Users/82107/IdeaProjects/JSP_webProject/src/dto&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/82107/IdeaProjects/JSP_webProject/web&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.3321839&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.editor&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_directory_selection": "C:/Users/82107/IdeaProjects/JSP_webProject/src/dto",
+    "last_opened_file_path": "C:/Users/82107/IdeaProjects/JSP_webProject/web/WEB-INF/classes",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.3321839",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "configurable.group.editor"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="dto" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\82107\IdeaProjects\JSP_webProject\web\WEB-INF\classes" />
       <recent name="C:\Users\82107\IdeaProjects\JSP_webProject\web" />
       <recent name="C:\Users\82107\IdeaProjects\JSP_webProject\web\resources\assets\img" />
       <recent name="C:\Users\82107\IdeaProjects\JSP_webProject\web\WEB-INF\lib" />
       <recent name="C:\Users\82107\IdeaProjects\JSP_webProject\web\resources\assets" />
-      <recent name="C:\Users\82107\IdeaProjects\JSP_webProject\web\calendar\js" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\82107\IdeaProjects\JSP_webProject\web\WEB-INF\lib" />
@@ -357,7 +307,7 @@
       <workItem from="1669973149685" duration="6910000" />
       <workItem from="1669987310853" duration="415000" />
       <workItem from="1669988743231" duration="7701000" />
-      <workItem from="1669999381840" duration="2839000" />
+      <workItem from="1669999381840" duration="10152000" />
     </task>
     <task id="LOCAL-00001" summary=":art: Improve Design">
       <created>1668845460783</created>
@@ -506,7 +456,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669965336838</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary=":sparkles: Add Admin Mode!">
+      <created>1670002485905</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1670002485905</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -544,14 +501,15 @@
     <MESSAGE value=":sparkles: Add Delete Data function" />
     <MESSAGE value=":sparkles: Add Chart.js Function!!!!!" />
     <MESSAGE value=":sparkles: Add Many New Functions.." />
-    <option name="LAST_COMMIT_MESSAGE" value=":sparkles: Add Many New Functions.." />
+    <MESSAGE value=":sparkles: Add Admin Mode!" />
+    <option name="LAST_COMMIT_MESSAGE" value=":sparkles: Add Admin Mode!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/web/signup/signup_check_success.jsp</url>
-          <line>49</line>
+          <line>53</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>

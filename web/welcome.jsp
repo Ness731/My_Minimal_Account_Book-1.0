@@ -1,4 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,18 +12,23 @@
   <link href="resources/css/styles.css?after" rel="stylesheet"/>
 </head>
 <body style="background-image: url(resources/assets/img/register_background.jpg); background-size: cover">
+
+<fmt:requestEncoding value="UTF-8"/>
+<fmt:setLocale value='<%= session.getAttribute("language")%>'/>
+<fmt:setBundle basename="message" var="resourceBundle"/>
+
 <div class="masthead">
   <div class="masthead-content text-white stop-dragging">
     <div class="container-fluid px-lg-2">
       <!-- 다국어 처리 필요 1 -->
       <h1 class="fs-1 fw-bold mb-4"
           style="font-family: Noto Sans KR, sans-serif; letter-spacing: 1.1px; white-space:nowrap">
-        가입을 환영합니다! 👏
+        <fmt:message key="welcomeTitle" bundle="${resourceBundle}"/> 👏
       </h1>
       <!-- 다국어 처리 필요 2 -->
       <p class="fs-3 fw-lighter mb-5"
          style="font-family: Noto Sans KR, sans-serif; letter-spacing: 1px; white-space:nowrap">
-        미니멀 라이프를 향한 첫 여정을 지금 바로 시작해보세요!
+        <fmt:message key="welcomeMsg" bundle="${resourceBundle}"/>
       </p>
 
       <div class="row input-group-newsletter">
@@ -31,7 +37,7 @@
           <button onclick="location='main.jsp'" class="btn btn-outline-light"
                   style="font-family: Noto Sans KR, sans-serif; font-weight: lighter;
                             font-size: medium; letter-spacing: 1.3px;"
-                  id="signUpButton" type="submit">메인화면
+                  id="signUpButton" type="submit"><fmt:message key="mainPage" bundle="${resourceBundle}"/>
           </button>
         </div>
       </div>
