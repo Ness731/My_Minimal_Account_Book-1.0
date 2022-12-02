@@ -19,15 +19,16 @@ public class UserDAO {
     }
 
     public boolean insertUser(User user) throws SQLException {
+        System.out.println("***User ID = "+user.getEmail_id());
         Connection conn = null;
-
         try {
             conn = DBUtill.getConnection();
-            String sql = "insert into user values(?,?,?)";
+            String sql = "insert into user values(?,?,?,?)";
             PreparedStatement pstmt = conn.prepareStatement(sql);
             pstmt.setString(1, user.getEmail_id());
             pstmt.setString(2, user.getPwd());
             pstmt.setString(3, user.getUname());
+            pstmt.setString(4, user.getProfile_img());
 
             pstmt.executeUpdate();
             pstmt.close();
@@ -48,11 +49,12 @@ public class UserDAO {
 
         try {
             conn = DBUtill.getConnection();
-            String sql = "update user set pwd=?, uname=? where email_id=?";
+            String sql = "update user set pwd=?, uname=?, profile_img=? where email_id=?";
             PreparedStatement pstmt = conn.prepareStatement(sql);
             pstmt.setString(1, user.getPwd());
             pstmt.setString(2, user.getUname());
-            pstmt.setString(3, user.getEmail_id());
+            pstmt.setString(3, user.getProfile_img());
+            pstmt.setString(4, user.getEmail_id());
 
             resultCnt = pstmt.executeUpdate();
 
@@ -104,7 +106,7 @@ public class UserDAO {
             String sql = "select * from User order by email_id";
             ResultSet rs = stmt.executeQuery(sql);
             while (rs.next()) {
-                User user = new User(rs.getString(1), rs.getString(2), rs.getString(3));
+                User user = new User(rs.getString(1), rs.getString(2), rs.getString(3), rs.getString(4));
                 list.add(user);
             }
         } catch (Exception e) {
@@ -133,7 +135,7 @@ public class UserDAO {
             ResultSet rs = stmt.executeQuery(sql);
 
             if (rs.next()) {
-                user = new User(rs.getString(1), rs.getString(2), rs.getString(3));
+                user = new User(rs.getString(1), rs.getString(2), rs.getString(3), rs.getString(4));
             }
         } catch (Exception e) {
             // TODO Auto-generated catch block

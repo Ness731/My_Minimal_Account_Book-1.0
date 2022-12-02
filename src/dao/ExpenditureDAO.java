@@ -5,7 +5,9 @@ import utility.Calculator;
 
 import java.sql.*;
 import java.time.LocalDate;
+import java.time.YearMonth;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
 public class ExpenditureDAO {
@@ -181,13 +183,11 @@ public class ExpenditureDAO {
     }
     public int getWeeklySavingRate() throws SQLException {
         int pre, crr;
-
         // 1. 지난주 소비
         String preStart = Calculator.getPreWeekMonday();
         String preEnd = Calculator.getPreWeekSunday();
         String presql = "select sum(amount) from expenditure where expend_date between \"" + preStart + "\" and \"" + preEnd + "\"";
         pre = getIntValue(presql);
-
         // 2. 이번주 소비
         crr = getSumOfWeeklyExp();
 
@@ -196,6 +196,13 @@ public class ExpenditureDAO {
 
     public int getRecordCnt() throws SQLException {
         String sql = "select count(*) from expenditure";
+        return getIntValue(sql);
+    }
+
+    public int getTodayRecordCnt() throws SQLException {
+        java.text.SimpleDateFormat formatter = new java.text.SimpleDateFormat("yyyy-MM-dd");
+        Calendar c = Calendar.getInstance();
+        String sql = "select count(*) from expenditure where expend_date like \"" + formatter.format(c.getTime()) +"\"";
         return getIntValue(sql);
     }
 

@@ -12,12 +12,14 @@
             arrList += ",";
     }
     System.out.println(arrList);
+    System.out.println("logined user : " + session.getAttribute("email_id").toString());
 %>
-<div id="arrayData"><%=arrList%></div>
+
+<p id="arrayData" style="position: fixed; z-index: -999"><%=arrList%></p>
 <body id="page-top">
 <div id="wrapper">
     <!-- Content Wrapper -->
-    <%@ include file="util/sidebar.jsp" %>
+    <jsp:include page="util/sidebar.jsp"/>
     <div id="content-wrapper" class="d-flex flex-column">
         <!-- Main Content -->
         <div id="content">
@@ -42,17 +44,19 @@
                         <!-- Area Chart -->
                         <div class="card shadow mb-4">
                             <div class="card-header py-3">
-                                <h6 class="m-0 font-weight-bold text-primary">소비 그래프</h6>
+                                <h6 class="m-0 font-weight-bold text-primary">나의 소비 곡선</h6>
                             </div>
                             <div class="card-body">
+                                <p class="pb-1">지난 1년 간의 나의 소비를 그래프로 확인해보세요. 👀</p>
                                 <div class="chart-area" style="height: 16.2rem;">
                                     <canvas id="myAreaChart"></canvas>
                                 </div>
-                                지난 1년 간의 나의 소비를 그래프로 확인해보세요.
                             </div>
                         </div>
-                        <!-- 목표 달성 그래프 -->
-                        <jsp:include page="util/goal_graph.jsp"/>
+                        <div class="row" style="padding-left: 0.8rem">
+                            <jsp:include page="util/bar_graph.jsp"/>
+                            <jsp:include page="util/best_category.jsp"/>
+                        </div>
                     </div>
                 </div>
             </div>

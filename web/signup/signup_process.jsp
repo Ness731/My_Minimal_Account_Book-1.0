@@ -11,6 +11,8 @@
     String uname = request.getParameter("uname");
 
     if (userMgr.signUp(email_id, pwd, uname)) {
+        session.setAttribute("email_id", email_id);
+        session.setAttribute("pwd", pwd);
         response.sendRedirect("../welcome.jsp");
     } else {
         response.sendRedirect("../index_error.jsp");

@@ -12,7 +12,7 @@
     <jsp:include page="util/sidebar.jsp"/>
     <div id="content-wrapper" class="d-flex flex-column">
         <div id="content">
-            <%@ include file="util/topbar.jsp" %>
+            <jsp:include page="util/topbar.jsp"/>
             <!-- Begin Page Content -->
             <div class="container-fluid">
                 <!-- Page Heading -->

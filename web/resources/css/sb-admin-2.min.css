@@ -394,7 +394,7 @@ hr {
 }
 
 .small, small {
-    font-size: 80%;
+    font-size: 85%;
     font-weight: 400
 }
 
@@ -7982,7 +7982,7 @@ a.bg-dark:focus, a.bg-dark:hover, button.bg-dark:focus, button.bg-dark:hover {
 }
 
 .pt-4, .py-4 {
-    padding-top: 1.5rem !important
+    padding-top: 2.0rem !important
 }
 
 .pr-4, .px-4 {
@@ -9744,7 +9744,7 @@ a.text-secondary:focus, a.text-secondary:hover {
 }
 
 .text-success {
-    color: #1cc88a !important
+    color: #0e76a8 !important
 }
 
 a.text-success:focus, a.text-success:hover {
@@ -9768,7 +9768,7 @@ a.text-warning:focus, a.text-warning:hover {
 }
 
 .text-danger {
-    color: #e74a3b !important
+    color: #be43c7 !important
 }
 
 a.text-danger:focus, a.text-danger:hover {
@@ -10195,7 +10195,7 @@ a:focus {
 }
 
 .border-left-success {
-    border-left: .25rem solid #1cc88a !important
+    border-left: .25rem solid #0e76a8 !important
 }
 
 .border-bottom-success {
@@ -10219,11 +10219,11 @@ a:focus {
 }
 
 .border-left-danger {
-    border-left: .25rem solid #e74a3b !important
+    border-left: .25rem solid #a276a9 !important
 }
 
 .border-bottom-danger {
-    border-bottom: .25rem solid #e74a3b !important
+    border-bottom: .25rem solid #a276a9 !important
 }
 
 .border-left-light {

@@ -38,8 +38,7 @@ public class UserManager {
     //회원가입 성공시 true
     public boolean signUp(String email_id, String pwd, String uname) throws SQLException {
         User user = new User(email_id, pwd, uname);
-        // 이메일이 계속 null로 뜬다. 아마 파라미터 넘어오는 과정이 문제인듯?
-        System.out.println("이메일: " + email_id + "비번: " + pwd + "이름: " + uname);
+        System.out.println("\n*** parameter value: " + email_id + "pw: " + pwd + "name: " + uname);
         return userDao.insertUser(user);
     }
 

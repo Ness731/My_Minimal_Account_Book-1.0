@@ -6,6 +6,8 @@
     String email_id = request.getParameter("email_id");
     String pwd = request.getParameter("pwd");
     if (userMgr.login(email_id, pwd)) {
+        session.setAttribute("email_id", email_id);
+        session.setAttribute("pwd", pwd);
         response.sendRedirect("../main.jsp");
     } else {
         response.sendRedirect("../login/login_failed.jsp");

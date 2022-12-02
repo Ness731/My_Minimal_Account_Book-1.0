@@ -9,13 +9,69 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5302081-c2d0-4d3e-ba3a-9af8c809947a" name="Changes" comment=":sparkles: Add Delete Data function">
+    <list default="true" id="a5302081-c2d0-4d3e-ba3a-9af8c809947a" name="Changes" comment=":sparkles: Add Chart.js Function!!!!!">
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/annotations-api.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/catalina-ant.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/catalina-ha.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/catalina-ssi.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/catalina-storeconfig.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/catalina-tribes.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/catalina.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/ecj-4.20.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/el-api.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/jasper-el.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/jasper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/jaspic-api.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/jsp-api.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/ojdbc11.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/servlet-api.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/tomcat-api.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/tomcat-coyote.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/tomcat-dbcp.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/tomcat-i18n-cs.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/tomcat-i18n-de.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/tomcat-i18n-es.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/tomcat-i18n-fr.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/tomcat-i18n-ja.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/tomcat-i18n-ko.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/tomcat-i18n-pt-BR.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/tomcat-i18n-ru.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/tomcat-i18n-zh-CN.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/tomcat-jdbc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/tomcat-jni.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/tomcat-util-scan.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/tomcat-util.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/tomcat-websocket.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/websocket-api.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/util/best_category.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/util/change_img.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/util/change_pwd.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/JSP_webProject_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/JSP_webProject_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/099a1b64-06f2-4321-b67c-1721f3226089.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/099a1b64-06f2-4321-b67c-1721f3226089.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/ExpenditureDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/ExpenditureDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/UserManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/UserManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dto/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dto/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/charts.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/login/login_process.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/login/login_process.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/main.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/resources/js/demo/chart-area-demo.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/resources/js/demo/chart-area-demo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/resources/vendor/chart.js/Chart.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/resources/vendor/chart.js/Chart.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/util/delete_modal.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/profile.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/profile.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/resources/assets/img/undraw_profile.svg" beforeDir="false" afterPath="$PROJECT_DIR$/web/resources/assets/profile/default_profile.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/resources/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/resources/css/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/resources/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/resources/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/resources/css/sb-admin-2.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/resources/css/sb-admin-2.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/resources/css/sb-admin-2.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/resources/css/sb-admin-2.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/resources/sql/user.sql" beforeDir="false" afterPath="$PROJECT_DIR$/web/resources/sql/user.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/signup/signup_check_success.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/signup/signup_check_success.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/signup/signup_process.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/signup/signup_process.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/tables.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/tables.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/util/cards.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/util/cards.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/util/goal_graph.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/util/bar_graph.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/util/sidebar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/util/sidebar.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/util/topbar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/util/topbar.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,6 +149,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_directory_selection": "C:/Users/82107/IdeaProjects/JSP_webProject/src/dto",
     "last_opened_file_path": "C:/Users/82107/IdeaProjects/JSP_webProject/web",
@@ -102,10 +160,11 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Facets",
+    "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.3321839",
-    "settings.editor.selected.configurable": "Settings.JavaScript"
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "configurable.group.editor"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
@@ -118,18 +177,18 @@
       <recent name="dto" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\82107\IdeaProjects\JSP_webProject\web\WEB-INF\lib" />
       <recent name="C:\Users\82107\IdeaProjects\JSP_webProject\web" />
       <recent name="C:\Users\82107\IdeaProjects\JSP_webProject\web\resources\assets\img" />
       <recent name="C:\Users\82107\IdeaProjects\JSP_webProject\web\resources\assets" />
       <recent name="C:\Users\82107\IdeaProjects\JSP_webProject\web\calendar\js" />
-      <recent name="C:\Users\82107\IdeaProjects\JSP_webProject\web\calendar" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\82107\IdeaProjects\JSP_webProject\web\WEB-INF\lib" />
+      <recent name="C:\Users\82107\IdeaProjects\JSP_webProject\web\resources\assets\profile" />
       <recent name="C:\Users\82107\IdeaProjects\JSP_webProject\web\util" />
       <recent name="C:\Users\82107\IdeaProjects\JSP_webProject\web\resources\assets\img" />
       <recent name="C:\Users\82107\IdeaProjects\JSP_webProject\web" />
-      <recent name="C:\Users\82107\IdeaProjects\JSP_webProject\web\calendar-04" />
-      <recent name="C:\Users\82107\IdeaProjects\JSP_webProject\web\signup" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="src" />
@@ -148,6 +207,8 @@
       </method>
     </configuration>
     <configuration name="Tomcat 9.0.68" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.68" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <deployment>
         <artifact name="JSP_webProject:war exploded">
           <settings>
@@ -157,6 +218,7 @@
       </deployment>
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="18900e61-d7bf-4848-95b2-cad7a9642a11" />
+        <option name="DEPLOY_TOMCAT_APPS" value="true" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -282,7 +344,13 @@
       <workItem from="1669883816246" duration="9025000" />
       <workItem from="1669894581082" duration="5292000" />
       <workItem from="1669903328254" duration="358000" />
-      <workItem from="1669907879605" duration="6489000" />
+      <workItem from="1669907879605" duration="10244000" />
+      <workItem from="1669918182277" duration="6990000" />
+      <workItem from="1669936827474" duration="1358000" />
+      <workItem from="1669938214156" duration="562000" />
+      <workItem from="1669938811492" duration="344000" />
+      <workItem from="1669939192394" duration="6345000" />
+      <workItem from="1669945568213" duration="9157000" />
     </task>
     <task id="LOCAL-00001" summary=":art: Improve Design">
       <created>1668845460783</created>
@@ -417,7 +485,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669896344677</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary=":sparkles: Add Chart.js Function!!!!!">
+      <created>1669914525398</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1669914525398</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -453,59 +528,16 @@
     <MESSAGE value=":bug: Fix a Bug in DatePicker.." />
     <MESSAGE value=":sparkles: Add goal graph" />
     <MESSAGE value=":sparkles: Add Delete Data function" />
-    <option name="LAST_COMMIT_MESSAGE" value=":sparkles: Add Delete Data function" />
+    <MESSAGE value=":sparkles: Add Chart.js Function!!!!!" />
+    <option name="LAST_COMMIT_MESSAGE" value=":sparkles: Add Chart.js Function!!!!!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/dao/UserManager.java</url>
-          <line>41</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/dao/UserManager.java</url>
-          <line>42</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/dao/UserManager.java</url>
-          <line>39</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/dao/UserManager.java</url>
-          <line>40</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/web/signup/signup_process.jsp</url>
-          <line>12</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/web/signup/signup_process.jsp</url>
-          <line>13</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/web/signup/signup_process.jsp</url>
-          <line>8</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/web/signup/signup_check_success.jsp</url>
           <line>49</line>
           <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/dao/UserManager.java</url>
-          <line>38</line>
-          <properties class="dao.UserManager" method="signUp">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
