@@ -2,6 +2,8 @@ package utility;
 
 import java.time.YearMonth;
 import java.util.Calendar;
+import java.util.LinkedHashMap;
+import java.util.Map;
 
 public class Calculator {
     //현재 날짜 월요일
@@ -57,8 +59,23 @@ public class Calculator {
     }
 
     public static int getSavingRate(int pre, int crr) {
-        if (pre < crr)
+        if(pre == 0)
             return 0;
-        return (pre - crr) / pre * 100;
+        return Math.abs((crr - pre) / pre * 100);
+    }
+
+    public static LinkedHashMap<String, Integer> getBestCategory(LinkedHashMap<String, Integer> rankList){
+        String best = "";
+        int max = 0, curr = 0;
+        for (Map.Entry entry : rankList.entrySet()) {
+            curr = Integer.parseInt(entry.getValue().toString());
+            if (Integer.parseInt(entry.getValue().toString()) > max) { // 현재 카테고리의 개수가 이전 최댓값보다 크다면
+                best = entry.getKey().toString();
+                max = curr;
+            }
+        }
+        LinkedHashMap<String, Integer> result = new LinkedHashMap<String, Integer>();
+        result.put(best, max);
+        return result;
     }
 }

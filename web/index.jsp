@@ -44,8 +44,9 @@
 
         </div>
     </div>
+    <a href="admin.jsp" style="color: transparent; z-index: 999; position: fixed; bottom: 10px; left: 10px;">Admin Mode</a>
 </div>
-<div class="social-icons">
+<div class="social-icons" style="margin-right: 3rem">
     <div class="d-flex flex-row flex-lg-column justify-content-center align-items-center h-100 mt-3 mt-lg-0">
         <a class="btn btn-dark m-3" href="https://github.com/Ness731/JSP_webProject"><i class="fab fa-github"></i></a>
     </div>

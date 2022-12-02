@@ -70,6 +70,31 @@ public class UserDAO {
 
     }
 
+    public int changePwd(String newPwd, String email_id) throws SQLException {
+        int resultCnt = 0;
+        Connection conn = null;
+
+        try {
+            conn = DBUtill.getConnection();
+            String sql = "update user set pwd=? where email_id=?";
+            PreparedStatement pstmt = conn.prepareStatement(sql);
+            pstmt.setString(1, newPwd);
+            pstmt.setString(2, email_id);
+
+            resultCnt = pstmt.executeUpdate();
+
+            pstmt.close();
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            if (conn != null)
+                conn.close();
+        }
+        return resultCnt;
+
+    }
+
     public int deleteUser(String email_id) throws SQLException {
         int resultCnt = 0;
         Connection conn = null;
@@ -94,7 +119,7 @@ public class UserDAO {
         return resultCnt;
     }
 
-    // 부서의 전체 리스트
+    // 모든 유저 리스트
     public List<User> listUser() throws SQLException {
         List<User> list = new ArrayList<User>();
         Statement stmt = null;
@@ -145,5 +170,10 @@ public class UserDAO {
                 conn.close();
         }
         return user;
+    }
+
+    public void withdrawalUser(String email_id) throws SQLException {
+        ExpenditureDAO.getInstance().deleteAllExpenditure(email_id);
+        deleteUser(email_id);
     }
 }

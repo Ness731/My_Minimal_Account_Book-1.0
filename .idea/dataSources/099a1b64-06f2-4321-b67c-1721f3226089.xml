@@ -1052,7 +1052,8 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <Position>8</Position>
     </column>
     <index id="299" parent="285" name="PRIMARY">
-      <ColNames>expend_id</ColNames>
+      <ColNames>expend_id
+email_id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>

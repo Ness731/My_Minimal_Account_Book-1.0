@@ -5,9 +5,9 @@
 <body>
 <%
     ExpenditureDAO exp = ExpenditureDAO.getInstance();
-    int weekly = exp.getWeeklySavingRate();
-    int monthly = exp.getMonthlySavingRate();
-    int count = exp.getRecordCnt();
+    int weekly = exp.getWeeklySavingRate(session.getAttribute("email_id").toString());
+    int monthly = exp.getMonthlySavingRate(session.getAttribute("email_id").toString());
+    int count = exp.getRecordCnt(session.getAttribute("email_id").toString());
 %>
 <div class="col-xl-7 col-lg-12 ml-0 pl-0">
     <!-- Project Card Example -->

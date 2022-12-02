@@ -9,16 +9,23 @@
 <%
     MultipartRequest multi = new MultipartRequest(request, "C:\\Users\\82107\\IdeaProjects\\JSP_webProject\\web\\resources\\assets\\userImg", 1024*1024*1024, "utf-8", new DefaultFileRenamePolicy());
     ExpenditureDAO expDAO = ExpenditureDAO.getInstance();
-
-    Enumeration files = multi.getFileNames();
-    String file = (String) files.nextElement();
-    String filename = multi.getFilesystemName(file);
     String root = "../resources/assets/userImg/";
+    String filename = "";
+    Enumeration files = multi.getFileNames();
+    while(files.hasMoreElements()){
+        String file = (String) files.nextElement();
+        filename = multi.getFilesystemName(file);
+    }
 
-    int expend_id = expDAO.generateExpId();
-    String email_id = "test id"; //세션정보에서 유저 아이디 가져오기;
+    int expend_id = expDAO.generateExpId(session.getAttribute("email_id").toString());
+    System.out.println("generated exp id: "+expend_id);
+
+    String email_id = session.getAttribute("email_id").toString();
+    System.out.println("email id: "+email_id);
+
     int amount = Integer.valueOf(multi.getParameter("amount"));
     Date expend_date = Date.valueOf(multi.getParameter("expend_date"));
+
     String img = root + filename;
     String category = multi.getParameter("category");
     String description = multi.getParameter("description");

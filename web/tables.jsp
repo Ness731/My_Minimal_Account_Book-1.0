@@ -7,6 +7,20 @@
 <html lang="en">
 <%@include file="util/main_header.jsp" %>
 <title>My Minimal Account Book - Tables</title>
+<script type="text/javascript">
+    function confirm_delete() {
+        const exp_id = document.getElementById("delete_btn").value;
+        console.log(exp_id);
+        var pt = prompt("삭제된 기록은 복구할 수 없습니다. 삭제를 원하시면 'delete'를 입력해주세요.");
+        if (pt == "delete") {
+            location.href="../util/delete_data.jsp?expend_id="+exp_id.toString();
+            return;
+        } else {
+            alert("확인 문구가 일치하지 않습니다.");
+            return;
+        }
+    }
+</script>
 <body id="page-top">
 <div id="wrapper">
     <jsp:include page="util/sidebar.jsp"/>
@@ -30,20 +44,21 @@
                                 <%
                                     ExpenditureDAO expDAO = ExpenditureDAO.getInstance();
                                     String std = request.getParameter("std");
-                                    List<Expenditure> expList = expDAO.orderByDateDesc(); //default value
+                                    String emid = session.getAttribute("email_id").toString();
+                                    List<Expenditure> expList = expDAO.orderByDateDesc(emid); //default value
                                     if (std != null) {
                                         switch (std) {
                                             case "date_desc":
-                                                expList = expDAO.orderByDateDesc();
+                                                expList = expDAO.orderByDateDesc(emid);
                                                 break;
                                             case "date_asc":
-                                                expList = expDAO.orderByDateAsc();
+                                                expList = expDAO.orderByDateAsc(emid);
                                                 break;
                                             case "amount_desc":
-                                                expList = expDAO.orderByAmountDesc();
+                                                expList = expDAO.orderByAmountDesc(emid);
                                                 break;
                                             case "amount_asc":
-                                                expList = expDAO.orderByAmountAsc();
+                                                expList = expDAO.orderByAmountAsc(emid);
                                                 break;
                                             case "food":
                                             case "hobby":
@@ -53,10 +68,10 @@
                                             case "transpt":
                                             case "finance":
                                             case "other":
-                                                expList = expDAO.orderByCategory(std);
+                                                expList = expDAO.orderByCategory(std, emid);
                                                 break;
                                             default:
-                                                expList = expDAO.orderByDateDesc();
+                                                expList = expDAO.orderByDateDesc(emid);
                                                 break;
                                         }
                                     }
@@ -82,17 +97,23 @@
                                 <%
                                     DecimalFormat decFormat = new DecimalFormat("###,###");
                                     for (Expenditure exp : expList) {
-                                        out.print("<tr>" +
-                                                "<td>" + exp.getCategory() + "</td>" +
-                                                "<td>" + exp.getExpend_date() + "</td>" +
-                                                "<td>" + decFormat.format(exp.getAmount()) + "</td>" +
-                                                "<td>" + exp.getDescription() + "</td>" +
-                                                "<td>" + exp.getTagString().substring(1, exp.getTagString().length()-1) + "</td>" +
-                                                "<td><a href=\"util/delete_data.jsp?expend_id="+exp.getExpend_id()+
-                                                "&expend_date="+exp.getExpend_date()+"\">삭제</a></td>" +
-                                                "<tr>");
-                                    }
+                                //<a href="util/delete_data.jsp?expend_id=">
                                 %>
+                                <tr>
+                                    <td><%=exp.getCategory()%></td>
+                                    <td><%=exp.getExpend_date()%></td>
+                                    <td><%=decFormat.format(exp.getAmount())%></td>
+                                    <td><%=exp.getDescription()%></td>
+                                    <td><%=exp.getTagString().substring(1, exp.getTagString().length()-1)%></td>
+                                    <td>
+                                        <button class="btn btn-sm script" type="button" onclick="confirm_delete()"
+                                                value="<%=exp.getExpend_id()%>" id="delete_btn"
+                                                style="width:3rem; color:white; background-color: #c74352">
+                                            삭제
+                                        </button>
+                                    </td>
+                                </tr>
+                                <% } %>
                                 </tbody>
                             </table>
                         </div>

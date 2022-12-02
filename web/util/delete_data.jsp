@@ -4,11 +4,9 @@
 <%
     ExpenditureDAO expDao = ExpenditureDAO.getInstance();
     String expend_id = request.getParameter("expend_id");
-    String expend_date = request.getParameter("expend_date");
 
-    System.out.println("***소비일자= " + expend_date);
     try {
-        expDao.deleteExpenditure(expend_id, expend_date);
+        expDao.deleteExpenditure(expend_id);
     } catch (Exception e) {
         response.sendRedirect("../main_error.jsp");
     } finally {

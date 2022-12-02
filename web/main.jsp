@@ -4,7 +4,7 @@
 <%@include file="util/main_header.jsp" %>
 <title>My Minimal Account Book - Main</title>
 <%
-    int[] resultList = ExpenditureDAO.getInstance().getSumOfAllMonthlyExp();
+    int[] resultList = dao.ExpenditureDAO.getInstance().getSumOfAllMonthlyExp(session.getAttribute("email_id").toString());
     String arrList = "";
     for(int i=0; i<resultList.length; i++){
         arrList += resultList[i];
@@ -12,10 +12,11 @@
             arrList += ",";
     }
     System.out.println(arrList);
+
     System.out.println("logined user : " + session.getAttribute("email_id").toString());
 %>
-
 <p id="arrayData" style="position: fixed; z-index: -999"><%=arrList%></p>
+
 <body id="page-top">
 <div id="wrapper">
     <!-- Content Wrapper -->
@@ -32,7 +33,6 @@
                                 <h6 class="m-0 font-weight-bold text-primary">소비 기록 추가하기</h6>
                             </div>
                             <div class="card-body">
-                                <!--%@include file="util/insert_data.jsp"%-->
                                 <jsp:include page="util/insert_data.jsp" flush="false"/>
                             </div>
                         </div>
@@ -54,6 +54,7 @@
                             </div>
                         </div>
                         <div class="row" style="padding-left: 0.8rem">
+                            <!--here-->
                             <jsp:include page="util/bar_graph.jsp"/>
                             <jsp:include page="util/best_category.jsp"/>
                         </div>
