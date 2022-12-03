@@ -70,6 +70,7 @@
    `static String user = "";`
    `static String password = "";`
    `static String url = "";`
+   
 ---
 ### 주의사항
 디렉토리 구조를 임의로 변경할 경우 __리소스 접근에 오류가 발생할 수 있음.__
