@@ -12,10 +12,9 @@
 <fmt:setBundle basename="message" var="resourceBundle"/>
 
 <div>
-    <!-- 다국어 처리 필요 6 -->
     <p class="mb-0 script-normal"><fmt:message key="isNotUser" bundle="${resourceBundle}"/>
-        <!-- 다국어 처리 필요 7 -->
-        <a href="../signup/signup.jsp" class="text-white-50 fw-bold script-normal" style="margin-left: 10px"><fmt:message key="signUp" bundle="${resourceBundle}"/></a>
+        <a href="../signup/signup.jsp" class="text-white-50 fw-bold script-normal"
+           style="margin-left: 10px"><fmt:message key="signUp" bundle="${resourceBundle}"/></a>
     </p>
 
     <p class="mb-0 script-normal" style="margin-top: 1rem">

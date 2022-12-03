@@ -9,7 +9,6 @@ public class UserManager {
     private UserDAO userDao = UserDAO.getInstance();
 
     private UserManager() {
-        // init();
     }
 
     public static UserManager getInstance() {
@@ -44,7 +43,7 @@ public class UserManager {
 
     //탈퇴 성공시 true
     public boolean withdrawal(String email_id) throws SQLException {
-        if(userDao.deleteUser(email_id) == 0)
+        if (userDao.deleteUser(email_id) == 0)
             return true;
         return false;
     }

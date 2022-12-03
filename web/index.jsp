@@ -23,7 +23,6 @@
         <div class="container px-lg-2">
             <h1 class="fs-1 fw-bold mb-4"
                 style="font-family: Noto Sans KR, sans-serif; letter-spacing: 1.1px;">
-                <!--다국어 처리-->
                 <fmt:message key="title" bundle="${resourceBundle}"/>
 
             </h1>
@@ -34,7 +33,6 @@
 
             <div class="row input-group-newsletter">
                 <div class="col-auto">
-                    <!-- 다국어 처리 필요 3 -->
                     <button onclick="location='signup/signup.jsp'" class="btn btn-primary"
                             style="font-family: Noto Sans KR, sans-serif; font-weight: bold;
                             font-size: medium; letter-spacing: 1.3px;"

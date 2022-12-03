@@ -2,7 +2,6 @@
 <html>
 <head>
     <meta charset="utf-8"/>
-    <!-- 다국어 처리 필요 8 -->
     <title>My Minimal Account Book</title>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
@@ -13,7 +12,6 @@
     <script src="http://code.jquery.com/ui/1.8.18/jquery-ui.min.js"></script>
 </head>
 <script type="text/javascript">
-    //$.noConflict();
     $(document).ready(function () {
         $.datepicker.setDefaults($.datepicker.regional['ko']);
         $("#expend_date").datepicker({
@@ -26,10 +24,8 @@
             monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
             monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
             dateFormat: "yy-mm-dd",
-            maxDate: 0,                       // 선택할수있는 최소날짜, ( 0 : 오늘 이후 날짜 선택 불가)
+            maxDate: 0,
             onClose: function (selectedDate) {
-                //시작일(startDate) datepicker가 닫힐때
-                //종료일(endDate)의 선택할수있는 최소 날짜(minDate)를 선택한 시작일로 지정
                 $("#endDate").datepicker("option", "minDate", selectedDate);
             }
         });
@@ -39,7 +35,6 @@
 <script type="text/javascript">
     function check_dataForm() {
         const form = document.dataForm;
-        //변수에 담아주기
         let amount = form.amount;
         let tag = form.tag;
         let tagCheck = /^(#).*/;
@@ -119,12 +114,10 @@
     }
 </style>
 <body>
-<!-- 폼 태그 시작-->
-<form name="dataForm" enctype = "multipart/form-data";>
+<form name="dataForm" enctype="multipart/form-data" ;>
     <div class="row d-flex justify-content-center align-items-center">
         <div class="p-4 text-center">
             <div class="mb-md-0 mt-md-0 pb-5">
-                <!-- 폼 태그 -->
                 <div class="form-outline form-white mb-4">
                     <label class="col-form-label script">소비일자</label>
                     <input name="expend_date" type="text" id="expend_date" class="form-control form-control-sm"
@@ -164,7 +157,6 @@
                     <label class="col-form-label script">이미지</label>
                     <input name="img" type="file" class="form-control-sm form-control-file"/>
                 </div>
-                <!-- 다국어 처리 필요 5 -->
                 <button class="btn btn-primary px-5 script mb-0" type="button" onclick="check_dataForm()">
                     추가하기
                 </button>

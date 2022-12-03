@@ -14,11 +14,11 @@
 <style>
     .circle-img {
         object-fit: cover;
-        object-position: top; /*정사각형이 아니라 직사각형일 경우 원 안에 보여지게 할 중심 이미지의 위치를 지정*/
-        border-radius: 50%; /*사각형의 모서리 둥근 정도를 지정하는 속성인데 50%를 지정하면 완전한 원이 됨*/
+        object-position: top;
+        border-radius: 50%;
         position: relative;
         display: block;
-        width : 11rem;
+        width: 11rem;
         height: 11rem;
     }
 </style>
@@ -38,8 +38,10 @@
                 <img src="<%=imgPath%>" class="circle-img">
             </div>
             <div class="border-left-danger ml-3">
-                <h3 style="font-weight: bold; color: white; padding-left: 0.8rem;"><%=u.getUname()%></h3>
-                <p style="color: lightgray; font-size: 12px; padding-left: 0.8rem;"><%=u.getEmail_id()%></p>
+                <h3 style="font-weight: bold; color: white; padding-left: 0.8rem;"><%=u.getUname()%>
+                </h3>
+                <p style="color: lightgray; font-size: 12px; padding-left: 0.8rem;"><%=u.getEmail_id()%>
+                </p>
             </div>
         </li>
 
@@ -82,6 +84,6 @@
         </li>
     </ul>
 </div>
-<%@include file="js_info.jsp"%>
+<%@include file="js_info.jsp" %>
 </body>
 </html>

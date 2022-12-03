@@ -13,7 +13,7 @@
         console.log(exp_id);
         var pt = prompt("삭제된 기록은 복구할 수 없습니다. 삭제를 원하시면 'delete'를 입력해주세요.");
         if (pt == "delete") {
-            location.href="../util/delete_data.jsp?expend_id="+exp_id.toString();
+            location.href = "../util/delete_data.jsp?expend_id=" + exp_id.toString();
             return;
         } else {
             alert("확인 문구가 일치하지 않습니다.");
@@ -27,12 +27,9 @@
     <div id="content-wrapper" class="d-flex flex-column">
         <div id="content">
             <jsp:include page="util/topbar.jsp"/>
-            <!-- Begin Page Content -->
             <div class="container-fluid">
-                <!-- Page Heading -->
                 <p class="pt-2 mb-3 text-gray-800" style="font-weight:bold; font-size: 35px">📑 소비 테이블</p>
                 <p class="mb-4 ml-3">나의 소비 내역을 다양한 기준으로 살펴볼 수 있어요.</p>
-                <!-- DataTales Example -->
                 <div class="card shadow mb-4">
                     <div class="card-header py-3">
                         <jsp:include page="util/table_menu.jsp"/>
@@ -97,14 +94,18 @@
                                 <%
                                     DecimalFormat decFormat = new DecimalFormat("###,###");
                                     for (Expenditure exp : expList) {
-                                //<a href="util/delete_data.jsp?expend_id=">
                                 %>
                                 <tr>
-                                    <td><%=exp.getCategory()%></td>
-                                    <td><%=exp.getExpend_date()%></td>
-                                    <td><%=decFormat.format(exp.getAmount())%></td>
-                                    <td><%=exp.getDescription()%></td>
-                                    <td><%=exp.getTagString().substring(1, exp.getTagString().length()-1)%></td>
+                                    <td><%=exp.getCategory()%>
+                                    </td>
+                                    <td><%=exp.getExpend_date()%>
+                                    </td>
+                                    <td><%=decFormat.format(exp.getAmount())%>
+                                    </td>
+                                    <td><%=exp.getDescription()%>
+                                    </td>
+                                    <td><%=exp.getTagString().substring(1, exp.getTagString().length() - 1)%>
+                                    </td>
                                     <td>
                                         <button class="btn btn-sm script" type="button" onclick="confirm_delete()"
                                                 value="<%=exp.getExpend_id()%>" id="delete_btn"

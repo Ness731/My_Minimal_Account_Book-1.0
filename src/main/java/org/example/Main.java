@@ -9,9 +9,7 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        String result = ExpenditureDAO.getInstance().getRangking("wjdwlswn848@naver.com").toString();
-        String result2 = Calculator.getBestCategory(ExpenditureDAO.getInstance().getRangking("wjdwlswn848@naver.com")).toString();
-        System.out.println(result);
-        System.out.println(result2);
+        //자바 모듈 테스트
+        //System.out.println(Calculator.getSavingRate(10000, 100));
     }
 }

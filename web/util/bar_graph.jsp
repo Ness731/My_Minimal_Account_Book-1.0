@@ -10,7 +10,6 @@
     int count = exp.getRecordCnt(session.getAttribute("email_id").toString());
 %>
 <div class="col-xl-7 col-lg-12 ml-0 pl-0">
-    <!-- Project Card Example -->
     <div class="card shadow mb-4">
         <div class="card-header py-3">
             <h6 class="m-0 font-weight-bold text-primary">나의 소비 분석</h6>

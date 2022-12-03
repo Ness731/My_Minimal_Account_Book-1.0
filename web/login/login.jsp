@@ -4,7 +4,6 @@
 <html lang="en">
 <%@ include file="login_header.jsp" %>
 <meta charset="utf-8"/>
-<!-- js 파일로 분리하면 인식이 안돼서 직접 삽입함-->
 <script type="text/javascript">
     function check_loginForm() {
         const form = document.loginForm;
@@ -22,8 +21,7 @@
         } else if (pwd.value == "") {
             alert("비밀번호를 입력하세요.");
             pwd.focus();
-        }
-        else {
+        } else {
             form.method = "post";
             form.action = "../login/login_process.jsp";
             form.submit();
@@ -44,17 +42,13 @@ background-size: cover;" onLoad="document.signupForm.email.focus()">
                 <div class="card bg-dark text-white" style="border-radius: 1rem; z-index: 2;">
                     <div class="card-body p-5 text-center">
                         <div class="mb-md-5 mt-md-4 pb-5">
-                            <!-- 다국어 처리 필요 1 -->
                             <h2 class="fw-bold mb-2 text-uppercase index">Login</h2>
-                            <!-- 다국어 처리 필요 2 -->
                             <p class="text-white-50 mb-5 script">
                                 <fmt:message key="loginScript" bundle="${resourceBundle}"/>
                             </p>
 
-                            <!-- 폼 태그 -->
                             <div class="form-outline form-white mb-4">
                                 <input type="text" name="email_id" class="form-control form-control-lg"/>
-                                <!-- 다국어 처리 필요 3 -->
                                 <label class="col-form-label script">
                                     <fmt:message key="email" bundle="${resourceBundle}"/>
                                 </label>
@@ -62,17 +56,16 @@ background-size: cover;" onLoad="document.signupForm.email.focus()">
 
                             <div class="form-outline form-white" style="margin-bottom: 5.5rem">
                                 <input type="password" name="pwd" class="form-control form-control-lg"/>
-                                <!-- 다국어 처리 필요 4 -->
                                 <label class="col-form-label script">
                                     <fmt:message key="password" bundle="${resourceBundle}"/>
                                 </label>
                             </div>
-                            <!-- 다국어 처리 필요 5 -->
-                            <button class="btn btn-outline-light btn-lg px-5 script" type="button" onclick="check_loginForm()">
+                            <button class="btn btn-outline-light btn-lg px-5 script" type="button"
+                                    onclick="check_loginForm()">
                                 Login
                             </button>
                         </div>
-                        <%@include file="login_footer.jsp"%>
+                        <%@include file="login_footer.jsp" %>
                     </div>
                 </div>
             </div>

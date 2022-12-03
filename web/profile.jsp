@@ -15,8 +15,8 @@
 <style>
     .circle-img_ {
         object-fit: cover;
-        object-position: top; /*정사각형이 아니라 직사각형일 경우 원 안에 보여지게 할 중심 이미지의 위치를 지정*/
-        border-radius: 50%; /*사각형의 모서리 둥근 정도를 지정하는 속성인데 50%를 지정하면 완전한 원이 됨*/
+        object-position: top;
+        border-radius: 50%;
         position: relative;
         display: block;
         width: 16rem;
@@ -62,7 +62,7 @@
         var pt = prompt("비밀번호 변경을 원하시면 기존의 비밀번호를 입력해주세요.");
 
         if (original_pwd == pt) {
-            form.action = "../util/change_pwd.jsp?pwd_change="+ change;
+            form.action = "../util/change_pwd.jsp?pwd_change=" + change;
             form.method = "post";
             form.submit();
         } else {
@@ -92,9 +92,7 @@
     <div id="content-wrapper" class="d-flex flex-column">
         <div id="content">
             <%@ include file="util/topbar.jsp" %>
-            <!-- Begin Page Content -->
             <div class="container-fluid">
-                <!-- Page Heading -->
                 <div class="row" style="padding-top: 4.0rem;padding-left: 5.0rem">
                     <div class="col-xl-3 col-lg-12 ml-0 pl-0 mr-2">
                         <div class="card shadow mb-2">
@@ -164,7 +162,8 @@
                                             </button>
                                         </div>
                                         <div class="flex-row" style="clear: both">
-                                            <p style="font-size: small; color: #6a6f73;" class="pl-3 pt-1">비밀번호는 8~25자리 이상의 [영문자+숫자+특수문자] 형식이어야 합니다.</p>
+                                            <p style="font-size: small; color: #6a6f73;" class="pl-3 pt-1">비밀번호는 8~25자리
+                                                이상의 [영문자+숫자+특수문자] 형식이어야 합니다.</p>
                                         </div>
                                     </div>
                                 </form>
@@ -177,7 +176,8 @@
                             <div class="card-body mt-0 pt-0">
                                 <div class="flex-column">
                                     <div class="border-left-primary header">회원 탈퇴</div>
-                                    <p style="font-size: small; color: #6a6f73;" class="pl-3 mb-2">회원을 탈퇴할 경우 기존의 데이터는 모두 사라집니다. 신중하게 생각해주세요.</p>
+                                    <p style="font-size: small; color: #6a6f73;" class="pl-3 mb-2">회원을 탈퇴할 경우 기존의 데이터는
+                                        모두 사라집니다. 신중하게 생각해주세요.</p>
                                     <button class="content btn btn-sm btn-secondary ml-3" type="button"
                                             onclick="confirm_withdrawal()"
                                             style="float: left; color:white; margin-bottom: 0.9rem">

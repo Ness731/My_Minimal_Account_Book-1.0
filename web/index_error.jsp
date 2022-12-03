@@ -1,4 +1,4 @@
-<%@ page isErrorPage = "true" %>
+<%@ page isErrorPage="true" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <!DOCTYPE html>
@@ -21,12 +21,10 @@
 <div class="masthead">
     <div class="masthead-content text-white stop-dragging">
         <div class="container-fluid px-lg-2">
-            <!-- 다국어 처리 필요 1 -->
             <h1 class="fs-1 fw-bold mb-4"
                 style="font-family: Noto Sans KR, sans-serif; letter-spacing: 1.1px; white-space:nowrap">
                 <fmt:message key="errorTitle" bundle="${resourceBundle}"/> :(
             </h1>
-            <!-- 다국어 처리 필요 2 -->
             <p class="fs-3 fw-lighter mb-5"
                style="font-family: Noto Sans KR, sans-serif; letter-spacing: 1px; white-space:nowrap">
                 <fmt:message key="errorMsg" bundle="${resourceBundle}"/>
@@ -34,7 +32,6 @@
 
             <div class="row input-group-newsletter">
                 <div class="col-auto">
-                    <!-- 다국어 처리 필요 3 -->
                     <button onclick="location='../index.jsp'" class="btn btn-outline-light"
                             style="font-family: Noto Sans KR, sans-serif; font-weight: lighter;
                             font-size: medium; letter-spacing: 1.3px;"
@@ -42,7 +39,6 @@
                     </button>
                 </div>
             </div>
-
         </div>
     </div>
 </div>

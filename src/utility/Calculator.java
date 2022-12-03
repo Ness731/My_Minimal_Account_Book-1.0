@@ -27,17 +27,18 @@ public class Calculator {
         java.text.SimpleDateFormat formatter = new java.text.SimpleDateFormat("yyyy-MM-dd");
         Calendar c = Calendar.getInstance();
         c.add(Calendar.DATE, -7);
-        c.set(Calendar.DAY_OF_WEEK,Calendar.MONDAY);
+        c.set(Calendar.DAY_OF_WEEK, Calendar.MONDAY);
         return formatter.format(c.getTime());
     }
 
     public static String getPreWeekSunday() {
         java.text.SimpleDateFormat formatter = new java.text.SimpleDateFormat("yyyy-MM-dd");
         Calendar c = Calendar.getInstance();
-        c.add(Calendar.DATE, -7);
-        c.set(Calendar.DAY_OF_WEEK,Calendar.SUNDAY);
+        c.add(Calendar.DATE, -6);
+        c.set(Calendar.DAY_OF_WEEK, Calendar.SUNDAY);
         return formatter.format(c.getTime());
     }
+
     public static String getCurFirstDay() {
         YearMonth ym = YearMonth.now();
         return ym.atDay(1).toString();
@@ -59,12 +60,23 @@ public class Calculator {
     }
 
     public static int getSavingRate(int pre, int crr) {
-        if(pre == 0)
+        if (pre == 0)
             return 0;
-        return Math.abs((crr - pre) / pre * 100);
+        System.out.println("pre:" + pre + " crr:" + crr);
+
+        double pre_ = pre;
+        double crr_ = crr;
+        double rate = ((crr_ - pre_) / pre_) * -100;
+        System.out.println("rate: " + rate);
+
+        if (rate < 0)
+            return 0;
+        if (rate > 100)
+            return 100;
+        return (int) rate;
     }
 
-    public static LinkedHashMap<String, Integer> getBestCategory(LinkedHashMap<String, Integer> rankList){
+    public static LinkedHashMap<String, Integer> getBestCategory(LinkedHashMap<String, Integer> rankList) {
         String best = "";
         int max = 0, curr = 0;
         for (Map.Entry entry : rankList.entrySet()) {

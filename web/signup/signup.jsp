@@ -83,7 +83,7 @@ background-size: cover;" onLoad="document.signupForm.email_id.focus()">
                                 </button>
                             </div>
                         </div>
-                        <%@ include file="../signup/signup_footer.jsp"%>
+                        <%@ include file="../signup/signup_footer.jsp" %>
                     </div>
                 </div>
             </div>

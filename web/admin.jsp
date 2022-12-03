@@ -13,7 +13,7 @@
         console.log(exp_id);
         var pt = prompt("삭제된 유저는 복구할 수 없습니다. 삭제를 원하시면 'delete'를 입력해주세요.");
         if (pt == "delete") {
-            location.href="../util/delete_user.jsp?email_id="+exp_id.toString();
+            location.href = "../util/delete_user.jsp?email_id=" + exp_id.toString();
             return;
         } else {
             alert("확인 문구가 일치하지 않습니다.");
@@ -30,10 +30,8 @@
             </div>
             <div class="sidebar-brand-text mx-3">Admin Mode</div>
         </a>
-        <!-- Divider -->
         <hr class="sidebar-divider my-0 mb-2">
 
-        <!-- Nav Item - Dashboard -->
         <li class="nav-item">
             <a class="nav-link" href="admin.jsp">
                 <i class="fas fa-fw fa-solar-panel"></i>
@@ -80,9 +78,12 @@
                                 <% List<User> userList = UserDAO.getInstance().listUser();
                                     for (User u : userList) {%>
                                 <tr>
-                                    <td><%=u.getEmail_id()%></td>
-                                    <td><%=u.getPwd()%></td>
-                                    <td><%=u.getUname()%></td>
+                                    <td><%=u.getEmail_id()%>
+                                    </td>
+                                    <td><%=u.getPwd()%>
+                                    </td>
+                                    <td><%=u.getUname()%>
+                                    </td>
                                     <td>
                                         <button class="btn btn-sm script" type="button" onclick="confirm_delete()"
                                                 id="delete_btn" value="<%=u.getEmail_id()%>"

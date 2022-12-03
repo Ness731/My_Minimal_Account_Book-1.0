@@ -1,0 +1,12 @@
+delete from user;
+insert into user values ("rlaalswns95@gmail.com", "rlaalswns1002!", "shwan", "default_profile.svg");
+insert into user values ("qkrtjwns01@naver.com", "qkrtjwns0315*", "크리", "default_profile.svg");
+insert into user values ("dldPwns98@naver.com", "dldpswns0523_", "찐멍개", "default_profile.svg");
+insert into user values ("dhtjdus040@gmail.com", "dhtjdus_0804", "Anna", "default_profile.svg");
+insert into user values ("dlatjdbs99@naver.com", "dlatjdbs_0131", "Marry", "default_profile.svg");
+insert into user values ("rlaehdbs02@gmail.com", "rlaehdbs1125!!", "ness", "default_profile.svg");
+insert into user values ("gkswldn97@gmail.com", "gkswldn0420!!", "jihoo", "default_profile.svg");
+insert into user values ("chlwlgn050@naver.com", "chlwlgn1117_", "kim", "default_profile.svg");
+insert into user values ("gkswlals92@naver.com", "gkswlals~0730", "자린고비", "default_profile.svg");
+insert into user values ("ghdwnsdn01@gmail.com", "ghdwnsdn0211!", "spike", "default_profile.svg");
+insert into user values ("test@test.com", "test1234!", "Pearl", "default_profile.svg");

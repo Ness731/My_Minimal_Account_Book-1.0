@@ -5,7 +5,6 @@ import java.util.ArrayList;
 
 public class Expenditure {
     private int expend_id;
-
     private String email_id;
     private int amount;
     private Date expend_date;
@@ -13,6 +12,7 @@ public class Expenditure {
     private String category;
     private String description;
     private ArrayList<String> tagList = new ArrayList<String>();
+
     public Expenditure() {
     }
 
@@ -41,12 +41,12 @@ public class Expenditure {
     }
 
     public void toArrayList(String tag) {
-        if(tag.isEmpty())
+        if (tag.isEmpty())
             return;
 
         ArrayList<String> tl = new ArrayList<String>();
         // '[', ']' 문자 제거
-        if(tag.charAt(0)=='[' && tag.charAt(tag.length()-1)==']'){
+        if (tag.charAt(0) == '[' && tag.charAt(tag.length() - 1) == ']') {
             int begin = 1, dest = tag.length() - 1;
             tag = tag.substring(begin, dest);
         }
@@ -54,9 +54,9 @@ public class Expenditure {
         String[] tagStr = tag.split("#");
         // 콤마 및 공백 제거
         for (String s : tagStr) {
-            if(!s.isEmpty()) {
+            if (!s.isEmpty()) {
                 int last = s.length() - 1;
-                String sub = s.substring(last-1, last+1);
+                String sub = s.substring(last - 1, last + 1);
                 /*
                 System.out.println("문자열: " + s + "| 길이: " + s.length() + "| 인덱스:" + last);
                 for(char c : s.toCharArray())
@@ -65,7 +65,7 @@ public class Expenditure {
                 System.out.println("부분문자: " + sub + "|");
                 */
                 if (sub.equals(", ")) {
-                    s = s.substring(0, last-1);
+                    s = s.substring(0, last - 1);
                 }
                 if (!tagList.contains(s))
                     tagList.add(s);

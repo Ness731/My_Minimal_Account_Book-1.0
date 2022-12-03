@@ -29,15 +29,13 @@
     String[] category = {"food", "hobby", "shopping", "living", "medical", "transpt", "finance", "other"};
     String[] kr = {"식비", "취미", "쇼핑", "리빙", "의료", "교통", "금융", "기타"};
     HashMap<String, String> category_kr = new HashMap<>();
-    for(int i=0; i<category.length; i++){
+    for (int i = 0; i < category.length; i++) {
         category_kr.put(category[i], kr[i]);
     }
     ExpenditureDAO exp = ExpenditureDAO.getInstance();
     LinkedHashMap<String, Integer> rankList = exp.getRangking(session.getAttribute("email_id").toString());
     LinkedHashMap<String, Integer> best = Calculator.getBestCategory(rankList);
     String best_name = "", best_cnt = "";
-    ArrayList<String> list_name = new ArrayList<>();
-    ArrayList<String> list_cnt = new ArrayList<>();
 
     for (Map.Entry entry : best.entrySet()) {
         best_name = entry.getKey().toString();
@@ -63,10 +61,10 @@
         <div class="card-body">
             <%if (best_cnt.equals("0")) {%>
             <div class="col">
-                    <div class="mb-4">아직 데이터가 충분히 쌓여있지 않아요. 🤔</div>
-                    <div style="position: relative; top:50%; left: 32%;">
-                        <img src="<%=root + "no_data.png"%>" class="card-image mb-3">
-                    </div>
+                <div class="mb-4">아직 데이터가 충분히 쌓여있지 않아요. 🤔</div>
+                <div style="position: relative; top:50%; left: 32%;">
+                    <img src="<%=root + "no_data.png"%>" class="card-image mb-3">
+                </div>
             </div>
             <%} else {%>
             <div class="col ml-1 mr-1">

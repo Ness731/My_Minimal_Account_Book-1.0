@@ -3,7 +3,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <%@ include file="signup_header.jsp" %>
-<!-- js 파일로 분리하면 인식이 안돼서 직접 삽입함-->
 <script type="text/javascript">
     function check_email() {
         const form = document.signupForm;
@@ -62,16 +61,14 @@ background-size: cover;" onLoad="document.signupForm.email_id.focus()">
                                     <label class="col-form-label script" for="repwd">
                                         <fmt:message key="passwordCheck" bundle="${resourceBundle}"/>
                                     </label>
-                                    <input type="password" name="repwd" id="repwd" class="form-control form-control-sm"
-                                           disabled/>
+                                    <input type="password" name="repwd" id="repwd" class="form-control form-control-sm" disabled/>
                                 </div>
 
                                 <div class="form-outline form-white mb-3">
                                     <label class="col-form-label script" for="uname">
                                         <fmt:message key="userName" bundle="${resourceBundle}"/>
                                     </label>
-                                    <input type="text" name="uname" id="uname" class="form-control form-control-sm"
-                                           disabled/>
+                                    <input type="text" name="uname" id="uname" class="form-control form-control-sm" disabled/>
                                 </div>
                                 <button class="btn btn-outline-dark btn-lg px-5 script" type="button"
                                         onclick="check_signupForm()" disabled>

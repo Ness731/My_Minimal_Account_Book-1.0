@@ -3,7 +3,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <%@ include file="signup_header.jsp" %>
-<!-- js 파일로 분리하면 인식이 안돼서 직접 삽입함-->
 <script type="text/javascript">
 
     function check_signupForm() {
@@ -12,7 +11,6 @@
         let repwd = form.repwd;
         let uname = form.uname;
         let email_id = document.getElementById("email_id");
-        //비밀번호 영문자+숫자+특수조합(8~25자리 입력) 정규식
         let pwdCheck = /^(?=.*[a-zA-Z])(?=.*[!@#$%^*+=-])(?=.*[0-9]).{8,25}$/;
 
         if (pwd.value == "") {
@@ -48,9 +46,7 @@ background-size: cover;" onLoad="document.signupForm.email_id.focus()">
                 <div class="card bg-white text-black" style="border-radius: 1rem; z-index: 2;">
                     <div class="card-body p-5 text-center">
                         <div class="mb-md-0 mt-md-4 pb-5">
-
                             <h2 class="fw-bold mb-4 text-uppercase index">Sign Up</h2>
-
                             <div class="form-outline form-white mb-3" style="pointer-events : none;">
                                 <label class="col-form-label script">
                                     <fmt:message key="email" bundle="${resourceBundle}"/>
